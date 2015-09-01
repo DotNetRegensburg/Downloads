@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverlightBusinessApplication", "SilverlightBusinessApplication\SilverlightBusinessApplication.csproj", "{C2CCB06D-2D0D-4DCA-A284-88D966843802}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverlightBusinessApplication.Web", "SilverlightBusinessApplication.Web\SilverlightBusinessApplication.Web.csproj", "{791EC101-1262-4840-A91A-4770BCE1D59C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{192CDE4D-F8D9-41B8-B2AD-EA37B274AF71}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{92FEB338-DC61-4913-9C4F-16E52B4AF065}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2CCB06D-2D0D-4DCA-A284-88D966843802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2CCB06D-2D0D-4DCA-A284-88D966843802}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2CCB06D-2D0D-4DCA-A284-88D966843802}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2CCB06D-2D0D-4DCA-A284-88D966843802}.Release|Any CPU.Build.0 = Release|Any CPU
+		{791EC101-1262-4840-A91A-4770BCE1D59C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{791EC101-1262-4840-A91A-4770BCE1D59C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{791EC101-1262-4840-A91A-4770BCE1D59C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{791EC101-1262-4840-A91A-4770BCE1D59C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{791EC101-1262-4840-A91A-4770BCE1D59C} = {192CDE4D-F8D9-41B8-B2AD-EA37B274AF71}
+		{C2CCB06D-2D0D-4DCA-A284-88D966843802} = {92FEB338-DC61-4913-9C4F-16E52B4AF065}
+	EndGlobalSection
+EndGlobal
