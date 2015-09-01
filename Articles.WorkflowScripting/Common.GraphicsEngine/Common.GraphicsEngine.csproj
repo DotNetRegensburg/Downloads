@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E6AACDA5-6277-4031-9282-529B9A1CA6AB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Common.GraphicsEngine</RootNamespace>
+    <AssemblyName>Common.GraphicsEngine</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="SlimDX, Version=4.0.12.43, Culture=neutral, PublicKeyToken=b1b0c32fd1ffe4f9, processorArchitecture=x86">
+      <HintPath>..\..\..\..\Program Files (x86)\SlimDX SDK (September 2011)\Bin\net40\x86\SlimDX.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animations\AnimationHandler.cs" />
+    <Compile Include="Animations\AnimationSequence.cs" />
+    <Compile Include="Animations\AnimationSequenceBuilder.cs" />
+    <Compile Include="Animations\_Standard\DelayAnimationSequence.cs" />
+    <Compile Include="Animations\_Misc.cs" />
+    <Compile Include="CommonExtensions.cs" />
+    <Compile Include="Drawing2D\Resources\StrokeStyleResource.cs" />
+    <Compile Include="Drawing3D\Animations\Move3DAnimationSequence.cs" />
+    <Compile Include="Drawing3D\Animations\Scale3DAnimationSequence.cs" />
+    <Compile Include="Drawing3D\Animations\_Misc.cs" />
+    <Compile Include="Drawing3D\Camera.cs" />
+    <Compile Include="Drawing3D\CameraInputHandler.cs" />
+    <Compile Include="Drawing3D\Graphics3D.cs" />
+    <Compile Include="Drawing3D\ICopiedTextureSource.cs" />
+    <Compile Include="Drawing3D\RenderState.cs" />
+    <Compile Include="Drawing3D\ResourceStorage3D.cs" />
+    <Compile Include="Drawing3D\Resources\BlendStateResource.cs" />
+    <Compile Include="Drawing3D\Resources\DepthStencilStateResource.cs" />
+    <Compile Include="Drawing3D\Resources\EffectResource.cs" />
+    <Compile Include="Drawing3D\Resources\GeometryResource.cs" />
+    <Compile Include="Drawing3D\Resources\IRenderableResource.cs" />
+    <Compile Include="Drawing3D\Resources\_Standard\StandardResources.cs" />
+    <Compile Include="Drawing3D\Resources\_Materials\DisplacementMaterialResource.cs" />
+    <Compile Include="Drawing3D\Resources\_Materials\MaterialResource.cs" />
+    <Compile Include="Drawing3D\Resources\_Materials\NormalMappingMaterialResource.cs" />
+    <Compile Include="Drawing3D\Resources\_Materials\SimpleColoredMaterialResource.cs" />
+    <Compile Include="Drawing3D\Resources\RasterizerStateResource.cs" />
+    <Compile Include="Drawing3D\Resources\Resource.cs" />
+    <Compile Include="Drawing3D\Resources\ResourceDictionary.cs" />
+    <Compile Include="Drawing3D\Resources\ShaderResource.cs" />
+    <Compile Include="Drawing3D\Resources\TexturePainterResource.cs" />
+    <Compile Include="Drawing3D\Resources\TextureResource.cs" />
+    <Compile Include="Drawing3D\Resources\VertexShaderResource.cs" />
+    <Compile Include="Drawing3D\Resources\_Misc.cs" />
+    <Compile Include="Drawing3D\Resources\_Textures\BitmapTextureResource.cs" />
+    <Compile Include="Drawing3D\Resources\_Textures\CopiedTextureResource.cs" />
+    <Compile Include="Drawing3D\Resources\_Textures\DrawingBrushTextureResource.cs" />
+    <Compile Include="Drawing3D\Resources\_Textures\ICopiedTextureSource.cs" />
+    <Compile Include="Drawing3D\Resources\_Textures\LinearGradientTextureResource.cs" />
+    <Compile Include="Drawing3D\Resources\_Textures\Scene2DTextureResource.cs" />
+    <Compile Include="Drawing3D\Resources\_Textures\SceneTextureResource.cs" />
+    <Compile Include="Drawing3D\Resources\_Textures\StringTextureResource.cs" />
+    <Compile Include="Drawing3D\Scene.cs" />
+    <Compile Include="Drawing3D\SceneLayer.cs" />
+    <Compile Include="Drawing3D\SceneObject.cs" />
+    <Compile Include="Drawing3D\SceneSpacialObject.cs" />
+    <Compile Include="Drawing3D\UpdateState.cs" />
+    <Compile Include="Drawing3D\_Misc.cs" />
+    <Compile Include="GraphicsLibraryException.cs" />
+    <Compile Include="Core\GraphicsConfiguration.cs" />
+    <Compile Include="Core\GraphicsCore.cs" />
+    <Compile Include="Core\GraphicsHelper.cs" />
+    <Compile Include="Core\_DeviceHandler\DeviceHandlerD2D.cs" />
+    <Compile Include="Core\_DeviceHandler\DeviceHandlerD3D101.cs" />
+    <Compile Include="Core\_DeviceHandler\DeviceHandlerD3D11.cs" />
+    <Compile Include="Core\_DeviceHandler\DeviceHandlerDWrite.cs" />
+    <Compile Include="Core\_DeviceHandler\DeviceHandlerDXGI.cs" />
+    <Compile Include="Core\_Misc.cs" />
+    <Compile Include="Drawing2D\Graphics2D.cs" />
+    <Compile Include="Drawing2D\ResourceStorage2D.cs" />
+    <Compile Include="Drawing2D\Resources\BrushResource.cs" />
+    <Compile Include="Gui\Direct2DCanvas.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gui\Direct2DEditorBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gui\Direct2DPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gui\Direct3D11Canvas.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gui\Direct3D11SceneView.CameraMovement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gui\Direct3D11SceneView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gui\EditorGrid2D.cs" />
+    <Compile Include="Gui\EditorViewport2D.cs" />
+    <Compile Include="Gui\_Misc.cs" />
+    <Compile Include="Objects\Construction\AnimationData.cs" />
+    <Compile Include="Objects\Construction\GeometryData.cs" />
+    <Compile Include="Objects\Construction\InstancingData.cs" />
+    <Compile Include="Objects\Construction\TextureData.cs" />
+    <Compile Include="Objects\Construction\Triangle.cs" />
+    <Compile Include="Objects\Construction\Vertex.cs" />
+    <Compile Include="Objects\Construction\VertexStructure.Builders.cs" />
+    <Compile Include="Objects\Construction\VertexStructure.cs" />
+    <Compile Include="Objects\Construction\_Misc.cs" />
+    <Compile Include="Objects\GenericObject.cs" />
+    <Compile Include="Objects\Loaders\ACFileLoader.cs" />
+    <Compile Include="Objects\Loaders\XFileLoader.cs" />
+    <Compile Include="Objects\ObjectTypes\BoxType.cs" />
+    <Compile Include="Objects\ObjectTypes\ComplexPalletType.cs" />
+    <Compile Include="Objects\ObjectTypes\ComplexRollBoxType.cs" />
+    <Compile Include="Objects\ObjectTypes\CoordinateAxesType.cs" />
+    <Compile Include="Objects\ObjectTypes\GenericObjectType.cs" />
+    <Compile Include="Objects\ObjectTypes\GroundType.cs" />
+    <Compile Include="Objects\ObjectTypes\LabelType.cs" />
+    <Compile Include="Objects\ObjectTypes\ObjectType.cs" />
+    <Compile Include="Objects\ObjectTypes\PalletType.cs" />
+    <Compile Include="Objects\ObjectTypes\RackType.cs" />
+    <Compile Include="Drawing3D\PickingInformation.cs" />
+    <Compile Include="Objects\SimpleCube.cs" />
+    <Compile Include="Objects\SimpleStructuredObject.cs" />
+    <Compile Include="Objects\SimpleTexturedCube.cs" />
+    <Compile Include="Objects\TexturePainter.cs" />
+    <Compile Include="Objects\_Misc\GroundTile.cs" />
+    <Compile Include="Objects\_Misc\GroundTileInfo.cs" />
+    <Compile Include="Objects\_Misc\RackColumnProperties.cs" />
+    <Compile Include="Objects\_Misc\RackRowProperties.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StandardVertex.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{AD5FB03C-6C86-4683-A599-F08B7A6AC486}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Util\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Effects\SimpleDisplacedRendering.fx" />
+    <EmbeddedResource Include="Resources\Effects\SimpleNormalMappedRendering.fx" />
+    <EmbeddedResource Include="Resources\Effects\SimpleRendering.fx" />
+    <EmbeddedResource Include="Resources\Effects\SimpleSkinning.fx" />
+    <EmbeddedResource Include="Resources\Effects\SimpleTransformedTexturedRendering.fx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

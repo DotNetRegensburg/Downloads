@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles.Workflows.CustomActivity", "Articles.Workflows.CustomActivity\Articles.Workflows.CustomActivity.csproj", "{1FAF990E-E4CB-4B66-9B71-43BB4C8DB814}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles.Workflows.Hosting", "Articles.Workflows.Hosting\Articles.Workflows.Hosting.csproj", "{CC297EC9-2FDB-4A6C-B1D2-FE5B6EFD2EBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles.Workflows.ActivityAndThreading", "Articles.Workflows.ActivityAndThreading\Articles.Workflows.ActivityAndThreading.csproj", "{5094ACD0-060B-47B9-B521-511A6498E420}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles.Workflow.Hosting.Client", "Articles.Workflow.Hosting.Client\Articles.Workflow.Hosting.Client.csproj", "{E5574B08-7EF0-4D49-A540-EABF7F811316}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles.Workflows.CustomExtension", "Articles.Workflows.CustomExtension\Articles.Workflows.CustomExtension.csproj", "{022E63BC-F262-401F-BDB8-B0595E994CE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles.CodeDefinedActivity", "Articles.CodeDefinedActivity\Articles.CodeDefinedActivity.csproj", "{F2CD6B97-1125-4C0E-80F0-3AAE1CFDCF90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles.Workflows.CustomDelayActivity", "Articles.Workflows.CustomDelayActivity\Articles.Workflows.CustomDelayActivity.csproj", "{20AEFA59-9991-417E-B1F9-48352D7C9347}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles.Workflow.WorkflowPersistence", "Articles.Workflow.WorkflowPersistence\Articles.Workflow.WorkflowPersistence.csproj", "{B2A2F36C-9828-43D4-BEDB-94BBB955DE4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles.Workflow.StateMachineWorkflow", "Articles.Workflow.StateMachineWorkflow\Articles.Workflow.StateMachineWorkflow.csproj", "{50B0D9B8-B575-4B15-AC39-9C62037190AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles.Workflow.GuiCustomization", "Articles.Workflow.GuiCustomization\Articles.Workflow.GuiCustomization.csproj", "{0FFF936C-2835-4EB5-8080-7039268E4020}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles.Workflow.UIScripting", "Articles.Workflow.UIScripting\Articles.Workflow.UIScripting.csproj", "{E3FEED52-ADDF-4517-863F-7A502B851306}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles.Workflows.BusinessCase", "Articles.Workflows.BusinessCase\Articles.Workflows.BusinessCase.csproj", "{31DBC2B0-5736-4386-9B9D-5DC36832A4D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles.Workflow.CustomWorkflowService", "Articles.Workflow.CustomWorkflowService\Articles.Workflow.CustomWorkflowService.csproj", "{087CB1F7-6D57-4929-AFE3-A440EB43DBF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FAF990E-E4CB-4B66-9B71-43BB4C8DB814}.Debug|x86.ActiveCfg = Debug|x86
+		{1FAF990E-E4CB-4B66-9B71-43BB4C8DB814}.Debug|x86.Build.0 = Debug|x86
+		{1FAF990E-E4CB-4B66-9B71-43BB4C8DB814}.Release|x86.ActiveCfg = Release|x86
+		{1FAF990E-E4CB-4B66-9B71-43BB4C8DB814}.Release|x86.Build.0 = Release|x86
+		{CC297EC9-2FDB-4A6C-B1D2-FE5B6EFD2EBE}.Debug|x86.ActiveCfg = Debug|x86
+		{CC297EC9-2FDB-4A6C-B1D2-FE5B6EFD2EBE}.Debug|x86.Build.0 = Debug|x86
+		{CC297EC9-2FDB-4A6C-B1D2-FE5B6EFD2EBE}.Release|x86.ActiveCfg = Release|x86
+		{CC297EC9-2FDB-4A6C-B1D2-FE5B6EFD2EBE}.Release|x86.Build.0 = Release|x86
+		{5094ACD0-060B-47B9-B521-511A6498E420}.Debug|x86.ActiveCfg = Debug|x86
+		{5094ACD0-060B-47B9-B521-511A6498E420}.Debug|x86.Build.0 = Debug|x86
+		{5094ACD0-060B-47B9-B521-511A6498E420}.Release|x86.ActiveCfg = Release|x86
+		{5094ACD0-060B-47B9-B521-511A6498E420}.Release|x86.Build.0 = Release|x86
+		{E5574B08-7EF0-4D49-A540-EABF7F811316}.Debug|x86.ActiveCfg = Debug|x86
+		{E5574B08-7EF0-4D49-A540-EABF7F811316}.Debug|x86.Build.0 = Debug|x86
+		{E5574B08-7EF0-4D49-A540-EABF7F811316}.Release|x86.ActiveCfg = Release|x86
+		{E5574B08-7EF0-4D49-A540-EABF7F811316}.Release|x86.Build.0 = Release|x86
+		{022E63BC-F262-401F-BDB8-B0595E994CE9}.Debug|x86.ActiveCfg = Debug|x86
+		{022E63BC-F262-401F-BDB8-B0595E994CE9}.Debug|x86.Build.0 = Debug|x86
+		{022E63BC-F262-401F-BDB8-B0595E994CE9}.Release|x86.ActiveCfg = Release|x86
+		{022E63BC-F262-401F-BDB8-B0595E994CE9}.Release|x86.Build.0 = Release|x86
+		{F2CD6B97-1125-4C0E-80F0-3AAE1CFDCF90}.Debug|x86.ActiveCfg = Debug|x86
+		{F2CD6B97-1125-4C0E-80F0-3AAE1CFDCF90}.Debug|x86.Build.0 = Debug|x86
+		{F2CD6B97-1125-4C0E-80F0-3AAE1CFDCF90}.Release|x86.ActiveCfg = Release|x86
+		{F2CD6B97-1125-4C0E-80F0-3AAE1CFDCF90}.Release|x86.Build.0 = Release|x86
+		{20AEFA59-9991-417E-B1F9-48352D7C9347}.Debug|x86.ActiveCfg = Debug|x86
+		{20AEFA59-9991-417E-B1F9-48352D7C9347}.Debug|x86.Build.0 = Debug|x86
+		{20AEFA59-9991-417E-B1F9-48352D7C9347}.Release|x86.ActiveCfg = Release|x86
+		{20AEFA59-9991-417E-B1F9-48352D7C9347}.Release|x86.Build.0 = Release|x86
+		{B2A2F36C-9828-43D4-BEDB-94BBB955DE4C}.Debug|x86.ActiveCfg = Debug|x86
+		{B2A2F36C-9828-43D4-BEDB-94BBB955DE4C}.Debug|x86.Build.0 = Debug|x86
+		{B2A2F36C-9828-43D4-BEDB-94BBB955DE4C}.Release|x86.ActiveCfg = Release|x86
+		{B2A2F36C-9828-43D4-BEDB-94BBB955DE4C}.Release|x86.Build.0 = Release|x86
+		{50B0D9B8-B575-4B15-AC39-9C62037190AF}.Debug|x86.ActiveCfg = Debug|x86
+		{50B0D9B8-B575-4B15-AC39-9C62037190AF}.Debug|x86.Build.0 = Debug|x86
+		{50B0D9B8-B575-4B15-AC39-9C62037190AF}.Release|x86.ActiveCfg = Release|x86
+		{50B0D9B8-B575-4B15-AC39-9C62037190AF}.Release|x86.Build.0 = Release|x86
+		{0FFF936C-2835-4EB5-8080-7039268E4020}.Debug|x86.ActiveCfg = Debug|x86
+		{0FFF936C-2835-4EB5-8080-7039268E4020}.Debug|x86.Build.0 = Debug|x86
+		{0FFF936C-2835-4EB5-8080-7039268E4020}.Release|x86.ActiveCfg = Release|x86
+		{0FFF936C-2835-4EB5-8080-7039268E4020}.Release|x86.Build.0 = Release|x86
+		{E3FEED52-ADDF-4517-863F-7A502B851306}.Debug|x86.ActiveCfg = Debug|x86
+		{E3FEED52-ADDF-4517-863F-7A502B851306}.Debug|x86.Build.0 = Debug|x86
+		{E3FEED52-ADDF-4517-863F-7A502B851306}.Release|x86.ActiveCfg = Release|x86
+		{E3FEED52-ADDF-4517-863F-7A502B851306}.Release|x86.Build.0 = Release|x86
+		{31DBC2B0-5736-4386-9B9D-5DC36832A4D6}.Debug|x86.ActiveCfg = Debug|x86
+		{31DBC2B0-5736-4386-9B9D-5DC36832A4D6}.Debug|x86.Build.0 = Debug|x86
+		{31DBC2B0-5736-4386-9B9D-5DC36832A4D6}.Release|x86.ActiveCfg = Release|x86
+		{31DBC2B0-5736-4386-9B9D-5DC36832A4D6}.Release|x86.Build.0 = Release|x86
+		{087CB1F7-6D57-4929-AFE3-A440EB43DBF4}.Debug|x86.ActiveCfg = Debug|x86
+		{087CB1F7-6D57-4929-AFE3-A440EB43DBF4}.Debug|x86.Build.0 = Debug|x86
+		{087CB1F7-6D57-4929-AFE3-A440EB43DBF4}.Release|x86.ActiveCfg = Release|x86
+		{087CB1F7-6D57-4929-AFE3-A440EB43DBF4}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

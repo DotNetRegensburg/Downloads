@@ -1,0 +1,94 @@
+﻿<Activity mc:Ignorable="sap" x:Class="Articles.Workflow.StateMachineWorkflow.MainActivity" sap:VirtualizedContainerService.HintSize="654,676" mva:VisualBasic.Settings="Assembly references and imported namespaces for internal implementation" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mv="clr-namespace:Microsoft.VisualBasic;assembly=System" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:s1="clr-namespace:System;assembly=System" xmlns:s2="clr-namespace:System;assembly=System.Xml" xmlns:s3="clr-namespace:System;assembly=System.Core" xmlns:s4="clr-namespace:System;assembly=System.ServiceModel" xmlns:sad="clr-namespace:System.Activities.Debugger;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System" xmlns:scg1="clr-namespace:System.Collections.Generic;assembly=System.ServiceModel" xmlns:scg2="clr-namespace:System.Collections.Generic;assembly=System.Core" xmlns:scg3="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:sl="clr-namespace:System.Linq;assembly=System.Core" xmlns:st="clr-namespace:System.Text;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <StateMachine sad:XamlDebuggerXmlReader.FileName="D:\Projects\Präsentatonen\Workflow 4\Articles.Workflows\Articles.Workflow.StateMachineWorkflow\MainActivity.xaml" sap:VirtualizedContainerService.HintSize="614,636">
+    <StateMachine.InitialState>
+      <State x:Name="__ReferenceID0" DisplayName="Start" sap:VirtualizedContainerService.HintSize="114,102">
+        <State.Entry>
+          <WriteLine sap:VirtualizedContainerService.HintSize="300,150" Text="[&quot;[Start] Entry &quot; + DateTime.Now.ToLongTimeString()]" />
+        </State.Entry>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg3:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">243,109</av:Point>
+            <av:Size x:Key="ShapeSize">114,102</av:Size>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Double x:Key="StateContainerWidth">100</x:Double>
+            <x:Double x:Key="StateContainerHeight">66.080000000000013</x:Double>
+          </scg3:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <State.Exit>
+          <WriteLine sap:VirtualizedContainerService.HintSize="300,150" Text="[&quot;[Start] Exit &quot; + DateTime.Now.ToLongTimeString()]" />
+        </State.Exit>
+        <State.Transitions>
+          <Transition DisplayName="T1" sap:VirtualizedContainerService.HintSize="430,485">
+            <Transition.Trigger>
+              <Delay Duration="[TimeSpan.FromSeconds(3)]" sap:VirtualizedContainerService.HintSize="388,100" />
+            </Transition.Trigger>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg3:Dictionary x:TypeArguments="x:String, x:Object">
+                <av:PointCollection x:Key="ConnectorLocation">300,211 300,279.5</av:PointCollection>
+              </scg3:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Transition.To>
+              <State x:Name="__ReferenceID1" DisplayName="Nach 3 Sekunden" sap:VirtualizedContainerService.HintSize="225,151">
+                <State.Entry>
+                  <WriteLine sap:VirtualizedContainerService.HintSize="300,150" Text="[&quot;[Nach 3 Sekunden] Entry &quot; + DateTime.Now.ToLongTimeString()]" />
+                </State.Entry>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg3:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">186.5,279.5</av:Point>
+                    <av:Size x:Key="ShapeSize">225,151</av:Size>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Double x:Key="StateContainerWidth">211</x:Double>
+                    <x:Double x:Key="StateContainerHeight">115</x:Double>
+                  </scg3:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <State.Exit>
+                  <WriteLine sap:VirtualizedContainerService.HintSize="300,150" Text="[&quot;[Nach 3 Sekunden] Exit &quot; + DateTime.Now.ToLongTimeString()]" />
+                </State.Exit>
+                <State.Transitions>
+                  <Transition DisplayName="T2" sap:VirtualizedContainerService.HintSize="430,485">
+                    <Transition.Trigger>
+                      <Delay Duration="[TimeSpan.FromSeconds(3)]" sap:VirtualizedContainerService.HintSize="388,100" />
+                    </Transition.Trigger>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg3:Dictionary x:TypeArguments="x:String, x:Object">
+                        <av:PointCollection x:Key="ConnectorLocation">310.25,430.5 310.25,460.5 310.35,460.5 310.35,484.5</av:PointCollection>
+                      </scg3:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Transition.To>
+                      <State x:Name="__ReferenceID2" DisplayName="Ende" sap:VirtualizedContainerService.HintSize="326,223" IsFinal="True">
+                        <State.Entry>
+                          <WriteLine sap:VirtualizedContainerService.HintSize="300,150" Text="[&quot;[Ende] Exit &quot; + DateTime.Now.ToLongTimeString()]" />
+                        </State.Entry>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg3:Dictionary x:TypeArguments="x:String, x:Object">
+                            <av:Point x:Key="ShapeLocation">229.5,484.5</av:Point>
+                            <av:Size x:Key="ShapeSize">148,83</av:Size>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            <x:Double x:Key="StateContainerWidth">134</x:Double>
+                            <x:Double x:Key="StateContainerHeight">47</x:Double>
+                          </scg3:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </State>
+                    </Transition.To>
+                  </Transition>
+                </State.Transitions>
+              </State>
+            </Transition.To>
+          </Transition>
+        </State.Transitions>
+      </State>
+    </StateMachine.InitialState>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg3:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+        <x:Double x:Key="StateContainerWidth">600</x:Double>
+        <x:Double x:Key="StateContainerHeight">600</x:Double>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,109</av:PointCollection>
+      </scg3:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <x:Reference>__ReferenceID0</x:Reference>
+    <x:Reference>__ReferenceID1</x:Reference>
+    <x:Reference>__ReferenceID2</x:Reference>
+  </StateMachine>
+</Activity>
