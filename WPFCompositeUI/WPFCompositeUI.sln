@@ -1,0 +1,135 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XML-Beispiele", "XML-Beispiele", "{CA922913-8DAC-4551-9BDF-9CC0AE8A6253}"
+	ProjectSection(SolutionItems) = preProject
+		Test Files\Employees.xml = Test Files\Employees.xml
+		Test Files\Family.xml = Test Files\Family.xml
+		Test Files\NotWellFormedEmployees.xml = Test Files\NotWellFormedEmployees.xml
+		Test Files\REC-xml-19980210.xml = Test Files\REC-xml-19980210.xml
+		Test Files\spec.dtd = Test Files\spec.dtd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Iteration 0 -Originalanwendung", "Iteration 0 -Originalanwendung", "{4CCB26C8-98FB-4F1E-898E-0C5B717B6D5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Iteration 1 - Shell mit Presentation Model", "Iteration 1 - Shell mit Presentation Model", "{99E27D3C-4C84-4D95-B566-DF6688011138}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Iteration 4 - Modul mit View und Services", "Iteration 4 - Modul mit View und Services", "{183A4096-FE0A-4247-AE29-F4C61A44673D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Composite Application Library", "Composite Application Library", "{AB34F928-F05D-42BA-BEA7-1487FD77CCC0}"
+	ProjectSection(SolutionItems) = preProject
+		Composite Application Library\Microsoft.Practices.Composite.dll = Composite Application Library\Microsoft.Practices.Composite.dll
+		Composite Application Library\Microsoft.Practices.Composite.Presentation.dll = Composite Application Library\Microsoft.Practices.Composite.Presentation.dll
+		Composite Application Library\Microsoft.Practices.Composite.UnityExtensions.dll = Composite Application Library\Microsoft.Practices.Composite.UnityExtensions.dll
+		Composite Application Library\Microsoft.Practices.ObjectBuilder2.dll = Composite Application Library\Microsoft.Practices.ObjectBuilder2.dll
+		Composite Application Library\Microsoft.Practices.ServiceLocation.dll = Composite Application Library\Microsoft.Practices.ServiceLocation.dll
+		Composite Application Library\Microsoft.Practices.Unity.dll = Composite Application Library\Microsoft.Practices.Unity.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Iteration 2 - Shell mit Services und Events", "Iteration 2 - Shell mit Services und Events", "{8F42AC9D-6C46-4B6E-9979-7E82B274BB05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlExplorer1.1", "XmlExplorer1.1\XmlExplorer1.1.csproj", "{7A80D72A-3513-4E50-AD26-A8B76C3453F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlExplorer1.2", "XmlExplorer1.2\XmlExplorer1.2.csproj", "{A1551174-B479-4F28-8735-7D92EAD3959C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlExplorer", "XmlExplorer\XmlExplorer.csproj", "{6629FA68-88DB-4D1A-8607-7D536C2C240C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Iteration 3 - Shell mit DI-Container und Bootstrapper", "Iteration 3 - Shell mit DI-Container und Bootstrapper", "{BBC45BEF-25A4-43F5-BB1C-D383CAF7A288}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlExplorer1.3", "XmlExplorer1.3\XmlExplorer1.3.csproj", "{6FE201DD-6D09-4D11-9BC2-9073CC265A59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlExplorerModule1.1", "XmlExplorerModule1.1\XmlExplorerModule1.1.csproj", "{D86CADDC-F7F7-46C0-8316-789CE4FF6C12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Iteration 5 - IModule implementieren", "Iteration 5 - IModule implementieren", "{2509194D-7628-4FAA-A142-2CE0361CD274}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlExplorerModule1.2", "XmlExplorerModule1.2\XmlExplorerModule1.2.csproj", "{B6E6F37E-CEDB-42DC-B009-A5C63978C860}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlExplorerShared1.1", "XmlExplorerShared1.1\XmlExplorerShared1.1.csproj", "{5A15C450-620A-4BE5-B492-EED1C8726780}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlExplorerShared1.2", "XmlExplorerShared1.2\XmlExplorerShared1.2.csproj", "{81CE5219-A6D7-40D1-80CE-F1514C1BF8A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Iteration 6 - Modulare Anwendung", "Iteration 6 - Modulare Anwendung", "{37D12C17-6B93-4754-A349-B10D73FBB81D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlExplorer1.4", "XmlExplorer1.4\XmlExplorer1.4.csproj", "{F46A3FC5-5AD6-4228-8A62-F898A65268D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlExplorerModule1.3", "XmlExplorerModule1.3\XmlExplorerModule1.3.csproj", "{B20D0E60-972A-482F-A76B-BF6F5122B122}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlExplorer.UnitTest", "XmlExplorer.UnitTest\XmlExplorer.UnitTest.csproj", "{45AD6859-12F4-49E5-AEBD-CF255802D118}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{133E391E-E405-4DEE-A4AF-26DEA7E74455}"
+	ProjectSection(SolutionItems) = preProject
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+		WPFCompositeUI.vsmdi = WPFCompositeUI.vsmdi
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = WPFCompositeUI.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A80D72A-3513-4E50-AD26-A8B76C3453F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A80D72A-3513-4E50-AD26-A8B76C3453F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A80D72A-3513-4E50-AD26-A8B76C3453F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A80D72A-3513-4E50-AD26-A8B76C3453F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1551174-B479-4F28-8735-7D92EAD3959C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1551174-B479-4F28-8735-7D92EAD3959C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1551174-B479-4F28-8735-7D92EAD3959C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1551174-B479-4F28-8735-7D92EAD3959C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6629FA68-88DB-4D1A-8607-7D536C2C240C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6629FA68-88DB-4D1A-8607-7D536C2C240C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6629FA68-88DB-4D1A-8607-7D536C2C240C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6629FA68-88DB-4D1A-8607-7D536C2C240C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FE201DD-6D09-4D11-9BC2-9073CC265A59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FE201DD-6D09-4D11-9BC2-9073CC265A59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FE201DD-6D09-4D11-9BC2-9073CC265A59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FE201DD-6D09-4D11-9BC2-9073CC265A59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D86CADDC-F7F7-46C0-8316-789CE4FF6C12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D86CADDC-F7F7-46C0-8316-789CE4FF6C12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D86CADDC-F7F7-46C0-8316-789CE4FF6C12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D86CADDC-F7F7-46C0-8316-789CE4FF6C12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6E6F37E-CEDB-42DC-B009-A5C63978C860}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6E6F37E-CEDB-42DC-B009-A5C63978C860}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6E6F37E-CEDB-42DC-B009-A5C63978C860}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6E6F37E-CEDB-42DC-B009-A5C63978C860}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A15C450-620A-4BE5-B492-EED1C8726780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A15C450-620A-4BE5-B492-EED1C8726780}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A15C450-620A-4BE5-B492-EED1C8726780}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A15C450-620A-4BE5-B492-EED1C8726780}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81CE5219-A6D7-40D1-80CE-F1514C1BF8A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81CE5219-A6D7-40D1-80CE-F1514C1BF8A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81CE5219-A6D7-40D1-80CE-F1514C1BF8A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81CE5219-A6D7-40D1-80CE-F1514C1BF8A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F46A3FC5-5AD6-4228-8A62-F898A65268D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F46A3FC5-5AD6-4228-8A62-F898A65268D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F46A3FC5-5AD6-4228-8A62-F898A65268D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F46A3FC5-5AD6-4228-8A62-F898A65268D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B20D0E60-972A-482F-A76B-BF6F5122B122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B20D0E60-972A-482F-A76B-BF6F5122B122}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B20D0E60-972A-482F-A76B-BF6F5122B122}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B20D0E60-972A-482F-A76B-BF6F5122B122}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45AD6859-12F4-49E5-AEBD-CF255802D118}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45AD6859-12F4-49E5-AEBD-CF255802D118}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45AD6859-12F4-49E5-AEBD-CF255802D118}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45AD6859-12F4-49E5-AEBD-CF255802D118}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6629FA68-88DB-4D1A-8607-7D536C2C240C} = {4CCB26C8-98FB-4F1E-898E-0C5B717B6D5A}
+		{7A80D72A-3513-4E50-AD26-A8B76C3453F6} = {99E27D3C-4C84-4D95-B566-DF6688011138}
+		{D86CADDC-F7F7-46C0-8316-789CE4FF6C12} = {183A4096-FE0A-4247-AE29-F4C61A44673D}
+		{A1551174-B479-4F28-8735-7D92EAD3959C} = {8F42AC9D-6C46-4B6E-9979-7E82B274BB05}
+		{5A15C450-620A-4BE5-B492-EED1C8726780} = {8F42AC9D-6C46-4B6E-9979-7E82B274BB05}
+		{6FE201DD-6D09-4D11-9BC2-9073CC265A59} = {BBC45BEF-25A4-43F5-BB1C-D383CAF7A288}
+		{B6E6F37E-CEDB-42DC-B009-A5C63978C860} = {2509194D-7628-4FAA-A142-2CE0361CD274}
+		{81CE5219-A6D7-40D1-80CE-F1514C1BF8A0} = {37D12C17-6B93-4754-A349-B10D73FBB81D}
+		{F46A3FC5-5AD6-4228-8A62-F898A65268D9} = {37D12C17-6B93-4754-A349-B10D73FBB81D}
+		{B20D0E60-972A-482F-A76B-BF6F5122B122} = {37D12C17-6B93-4754-A349-B10D73FBB81D}
+		{45AD6859-12F4-49E5-AEBD-CF255802D118} = {37D12C17-6B93-4754-A349-B10D73FBB81D}
+	EndGlobalSection
+EndGlobal

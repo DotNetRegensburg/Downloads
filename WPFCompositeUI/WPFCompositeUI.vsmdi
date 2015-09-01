@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestLists xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestList name="MainWindowPresentationModelTests" id="02f3f092-9b78-4216-b907-a53ab6a5fc8f" parentListId="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
+    <Description>Alle Tests für das MainWindowPresentationModel</Description>
+    <TestLinks>
+      <TestLink id="887c3a9b-c6cd-82a0-c92b-e2b0b4192ec7" name="CanOpenWithNoFile" storage="xmlexplorer.unittest\bin\debug\xmlexplorer.unittest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="fa708ea8-101a-29cc-66d3-b95d46493d3b" name="CanCloseWithFile" storage="xmlexplorer.unittest\bin\debug\xmlexplorer.unittest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="9cfe7fa3-ffd7-31c2-38a0-d8febef0fd74" name="CannotCloseWithNoFile" storage="xmlexplorer.unittest\bin\debug\xmlexplorer.unittest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="850a5525-6516-7cdf-e709-909f255e0731" name="SetsCurrentFile" storage="xmlexplorer.unittest\bin\debug\xmlexplorer.unittest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="6280ce8f-f8b2-28b3-87d0-735325663ec3" name="ClearsCurrentFile" storage="xmlexplorer.unittest\bin\debug\xmlexplorer.unittest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="321521d7-d42c-26f0-ff27-799049a96e52" name="CanExitOnWithNoFile" storage="xmlexplorer.unittest\bin\debug\xmlexplorer.unittest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    </TestLinks>
+  </TestList>
+  <TestList name="Lists of Tests" id="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
+    <RunConfiguration id="15fc281d-c5e4-4058-8b8d-7e31a58177c9" name="Local Test Run" storage="localtestrun.testrunconfig" type="Microsoft.VisualStudio.TestTools.Common.TestRunConfiguration, Microsoft.VisualStudio.QualityTools.Common,   PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestList>
+  <TestList name="ExplorerViewPresentationModelTest" id="bf434f42-696b-4aa8-8150-3e337136fea8" parentListId="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
+    <Description>Alle Tests für das ExplorerViewPresentationModel</Description>
+    <TestLinks>
+      <TestLink id="21a9bba9-0e6b-6510-3ab5-b26c8d7e8973" name="TestFileOpened" storage="xmlexplorer.unittest\bin\debug\xmlexplorer.unittest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="f44562b0-5603-3251-2e34-4c0298113185" name="TestFileClosed" storage="xmlexplorer.unittest\bin\debug\xmlexplorer.unittest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    </TestLinks>
+  </TestList>
+</TestLists>
