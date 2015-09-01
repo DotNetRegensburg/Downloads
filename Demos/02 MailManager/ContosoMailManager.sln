@@ -1,0 +1,115 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Setup", "Setup", "{C1718424-BD9A-49D4-902D-1477D18C832D}"
+	ProjectSection(SolutionItems) = preProject
+		Setup Files\CreateDatabaseObjects.cmd = Setup Files\CreateDatabaseObjects.cmd
+		Setup Files\MailManagerDatabase_Setup.sql = Setup Files\MailManagerDatabase_Setup.sql
+		Setup Files\WorkflowDatabase_Setup.sql = Setup Files\WorkflowDatabase_Setup.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailManager.Workflows", "ContosoMailManager\MailManager.Workflows.csproj", "{DD655824-E36F-4544-949F-CF9FE06750E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailManager.Activities", "ContosoActivities\MailManager.Activities.csproj", "{B2471DD5-D8D5-4EEC-B360-DB7927B62601}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailManager.Common", "MailManager.Common\MailManager.Common.csproj", "{8027BD0D-E91B-43EE-856B-720FE7A9B496}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MailManager", "http://localhost/MailManager", "{631F058A-BDB8-45CB-A26F-3F0388A8307F}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.0"
+		ProjectReferences = "{B2471DD5-D8D5-4EEC-B360-DB7927B62601}|Contoso.MailManager.Activities.dll;{8027BD0D-E91B-43EE-856B-720FE7A9B496}|Contoso.MailManager.Common.dll;{DD655824-E36F-4544-949F-CF9FE06750E6}|Contoso.MailManager.Workflows.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/MailManager"
+		Debug.AspNetCompiler.PhysicalPath = "MailManager.WebClient\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\MailManager\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/MailManager"
+		Release.AspNetCompiler.PhysicalPath = "MailManager.WebClient\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\MailManager\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "MailManager.WebClient\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Default|.NET = Default|.NET
+		Default|Any CPU = Default|Any CPU
+		Default|Mixed Platforms = Default|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD655824-E36F-4544-949F-CF9FE06750E6}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{DD655824-E36F-4544-949F-CF9FE06750E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD655824-E36F-4544-949F-CF9FE06750E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD655824-E36F-4544-949F-CF9FE06750E6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DD655824-E36F-4544-949F-CF9FE06750E6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{DD655824-E36F-4544-949F-CF9FE06750E6}.Default|.NET.ActiveCfg = Debug|Any CPU
+		{DD655824-E36F-4544-949F-CF9FE06750E6}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD655824-E36F-4544-949F-CF9FE06750E6}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{DD655824-E36F-4544-949F-CF9FE06750E6}.Default|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DD655824-E36F-4544-949F-CF9FE06750E6}.Default|Mixed Platforms.Build.0 = Debug|Any CPU
+		{DD655824-E36F-4544-949F-CF9FE06750E6}.Release|.NET.ActiveCfg = Release|Any CPU
+		{DD655824-E36F-4544-949F-CF9FE06750E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD655824-E36F-4544-949F-CF9FE06750E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD655824-E36F-4544-949F-CF9FE06750E6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{DD655824-E36F-4544-949F-CF9FE06750E6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B2471DD5-D8D5-4EEC-B360-DB7927B62601}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{B2471DD5-D8D5-4EEC-B360-DB7927B62601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2471DD5-D8D5-4EEC-B360-DB7927B62601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2471DD5-D8D5-4EEC-B360-DB7927B62601}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B2471DD5-D8D5-4EEC-B360-DB7927B62601}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B2471DD5-D8D5-4EEC-B360-DB7927B62601}.Default|.NET.ActiveCfg = Debug|Any CPU
+		{B2471DD5-D8D5-4EEC-B360-DB7927B62601}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2471DD5-D8D5-4EEC-B360-DB7927B62601}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{B2471DD5-D8D5-4EEC-B360-DB7927B62601}.Default|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B2471DD5-D8D5-4EEC-B360-DB7927B62601}.Default|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B2471DD5-D8D5-4EEC-B360-DB7927B62601}.Release|.NET.ActiveCfg = Release|Any CPU
+		{B2471DD5-D8D5-4EEC-B360-DB7927B62601}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2471DD5-D8D5-4EEC-B360-DB7927B62601}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2471DD5-D8D5-4EEC-B360-DB7927B62601}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B2471DD5-D8D5-4EEC-B360-DB7927B62601}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{8027BD0D-E91B-43EE-856B-720FE7A9B496}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{8027BD0D-E91B-43EE-856B-720FE7A9B496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8027BD0D-E91B-43EE-856B-07F}.Default|.NET.ActiveCPU.Build.0 = Debug|Any CPU
+		{8027BD0D-E91B-43EE-856B-720FE7A9B496}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8027BD0D-E91B-43EE-856B-720FE7A9B496}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8027BD0D-E91B-43EE-856B-720FE7A9B496}.Default|.NET.ActiveCfg = Debug|Any CPU
+		{8027BD0D-E91B-43EE-856B-720FE7A9B496}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{8027BD0D-E91B-43EE-856B-720FE7A9B496}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{8027BD0D-E91B-43EE-856B-720FE7A9B496}.Default|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8027BD0D-E91B-43EE-856B-720FE7A9B496}.Default|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8027BD0D-E91B-43EE-856B-720FE7A9B496}.Release|.NET.ActiveCfg = Release|Any CPU
+		{8027BD0D-E91B-43EE-856B-720FE7A9B496}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8027BD0D-E91B-43EE-856B-720FE7A9B496}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8027BD0D-E91B-43EE-856B-720FE7A9B496}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{8027BD0D-E91B-43EE-856B-720FE7A9B496}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{631F058A-BDB8-45CB-A26F-3F0388A8307F}.Debug|.NET.ActiveCfg = Debug|.NET
+		{631F058A-BDB8-45CB-A26F-3F0388A8307F}.Debug|.NET.Build.0 = Debug|.NET
+		{631F058A-BDB8-45CB-A26F-3F0388A8307F}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{631F058A-BDB8-45CB-A26F-3F0388A8307F}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{631F058A-BDB8-45CB-A26F-3F0388A8307F}.Debug|Mixed Platforms.Build.0 = Debug|.NET
+		{631F058A-BDB8-45CB-A26F-3F0388A8307F}.Default|.NET.ActiveCfg = Debug|.NET
+		{631F058A-BDB8-45CB-A26F-3F0388A8307F}.Default|.NET.Build.0 = Debug|.NET
+		{631F058A-BDB8-45CB-A26F-3F0388A8307F}.Default|Any CPU.ActiveCfg = Debug|.NET
+		{631F058A-BDB8-45CB-A26F-3F0388A8307F}.Default|Mixed Platforms.ActiveCfg = Debug|.NET
+		{631F058A-BDB8-45CB-A26F-3F0388A8307F}.Default|Mixed Platforms.Build.0 = Debug|.NET
+		{631F058A-BDB8-45CB-A26F-3F0388A8307F}.Release|.NET.ActiveCfg = Debug|.NET
+		{631F058A-BDB8-45CB-A26F-3F0388A8307F}.Release|.NET.Build.0 = Debug|.NET
+		{631F058A-BDB8-45CB-A26F-3F0388A8307F}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{631F058A-BDB8-45CB-A26F-3F0388A8307F}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{631F058A-BDB8-45CB-A26F-3F0388A8307F}.Release|Mixed Platforms.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
