@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="qps-ploc" original="RK.Store.MetroSnake_Multilingual.prilog.xml" tool-id="MultilingualAppToolkit" product-name="RK.Store.MetroSnake" product-version="Version 1" build-num="1.0.0.0">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="Resources">
+        <trans-unit id="Resources\GameOverScreenDetail\Text" translate="yes" xml:space="preserve">
+          <source>Tap here to start a new game</source>
+          <target state="new">Tap here to start a new game</target>
+        </trans-unit>
+        <trans-unit id="Resources\GameOverScreenTitle\Text" translate="yes" xml:space="preserve">
+          <source>Game over!</source>
+          <target state="new">Game over!</target>
+        </trans-unit>
+        <trans-unit id="Resources\MainScreenGetReady\Text" translate="yes" xml:space="preserve">
+          <source>Get Ready!</source>
+          <target state="new">Get Ready!</target>
+        </trans-unit>
+        <trans-unit id="Resources\MainScreenGiveFeedback\[using:Windows.UI.Xaml.Automation]AutomationProperties\Name" translate="yes" xml:space="preserve">
+          <source>Give Feedback</source>
+          <target state="new">Give Feedback</target>
+        </trans-unit>
+        <trans-unit id="Resources\MainScreenMoreInfo\[using:Windows.UI.Xaml.Automation]AutomationProperties\Name" translate="yes" xml:space="preserve">
+          <source>Help</source>
+          <target state="new">Help</target>
+        </trans-unit>
+        <trans-unit id="Resources\MainScreenPause\[using:Windows.UI.Xaml.Automation]AutomationProperties\Name" translate="yes" xml:space="preserve">
+          <source>Pause</source>
+          <target state="new">Pause</target>
+        </trans-unit>
+        <trans-unit id="Resources\MainScreenScore\Text" translate="yes" xml:space="preserve">
+          <source>Score:</source>
+          <target state="new">Score:</target>
+        </trans-unit>
+        <trans-unit id="Resources\MainScreenTapHere\Text" translate="yes" xml:space="preserve">
+          <source>Tap here to start the game</source>
+          <target state="new">Tap here to start the game</target>
+        </trans-unit>
+        <trans-unit id="Resources\PauseScreenDetail\Text" translate="yes" xml:space="preserve">
+          <source>Tap here to return to the game</source>
+          <target state="new">Tap here to return to the game</target>
+        </trans-unit>
+        <trans-unit id="Resources\PauseScreenTitle\Text" translate="yes" xml:space="preserve">
+          <source>Pause!</source>
+          <target state="new">Pause!</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

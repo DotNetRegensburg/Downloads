@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="RK.Store.MetroSnake.UI.GameStartupPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RK.Store.MetroSnake.UI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Name="GameStartupControlInstance">
+    <Page.Resources>
+        <Storyboard x:Name="FadeOutAnimation">
+            <DoubleAnimation 
+                Storyboard.TargetName="GameStartupControlInstance"
+                Storyboard.TargetProperty="Opacity"
+                From="1.0" To="0.0" Duration="00:00:00.300" />
+        </Storyboard>
+    </Page.Resources>
+
+    <Grid Margin="0,0,0,0">
+        <Rectangle 
+                Grid.Row="0" Grid.RowSpan="2"
+                Fill="#AA6495ED" />
+
+        <Border Background="#AA000000"
+                VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button Click="OnCmdMainClick">
+                <Grid Width="600" Height="200">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <Image Source="../Assets/Images/Snake_Start.png"
+                       Margin="10"
+                       Grid.Column="0" />
+                    <StackPanel Grid.Column="1" Margin="10">
+                        <TextBlock x:Uid="MainScreenGetReady" Text="Get Ready!"
+                                   FontFamily="Segoe UI Light" 
+                                   FontSize="42" TextWrapping="Wrap" />
+                        <TextBlock x:Uid="MainScreenTapHere" Text="Tap here to start the game"
+                                   FontFamily="Segoe UI Light" 
+                                   FontSize="20" TextWrapping="Wrap" />
+                    </StackPanel>
+                </Grid>
+            </Button>
+        </Border>
+    </Grid>
+</Page>

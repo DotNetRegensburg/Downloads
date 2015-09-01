@@ -1,0 +1,241 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RK.Store.MetroSnake", "RK.Store.MetroSnake\RK.Store.MetroSnake.csproj", "{61DBFAC0-365B-40CB-BA8D-88FF63BB3049}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extern", "Extern", "{9B810CC8-4C95-4595-8C11-EA7F22879523}"
+	ProjectSection(SolutionItems) = preProject
+		Extern\Versionen.txt = Extern\Versionen.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharpDX", "SharpDX", "{A8228899-4826-4560-8C77-616E2E50EF44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WinRT", "WinRT", "{6A7B06DD-8A35-43AF-B6C9-70DC3F27F165}"
+	ProjectSection(SolutionItems) = preProject
+		Extern\SharpDX\WinRT\SharpDX.D3DCompiler.dll = Extern\SharpDX\WinRT\SharpDX.D3DCompiler.dll
+		Extern\SharpDX\WinRT\SharpDX.D3DCompiler.xml = Extern\SharpDX\WinRT\SharpDX.D3DCompiler.xml
+		Extern\SharpDX\WinRT\SharpDX.Direct2D1.dll = Extern\SharpDX\WinRT\SharpDX.Direct2D1.dll
+		Extern\SharpDX\WinRT\SharpDX.Direct2D1.xml = Extern\SharpDX\WinRT\SharpDX.Direct2D1.xml
+		Extern\SharpDX\WinRT\SharpDX.Direct3D11.dll = Extern\SharpDX\WinRT\SharpDX.Direct3D11.dll
+		Extern\SharpDX\WinRT\SharpDX.Direct3D11.xml = Extern\SharpDX\WinRT\SharpDX.Direct3D11.xml
+		Extern\SharpDX\WinRT\SharpDX.dll = Extern\SharpDX\WinRT\SharpDX.dll
+		Extern\SharpDX\WinRT\SharpDX.DXGI.dll = Extern\SharpDX\WinRT\SharpDX.DXGI.dll
+		Extern\SharpDX\WinRT\SharpDX.DXGI.xml = Extern\SharpDX\WinRT\SharpDX.DXGI.xml
+		Extern\SharpDX\WinRT\SharpDX.MediaFoundation.dll = Extern\SharpDX\WinRT\SharpDX.MediaFoundation.dll
+		Extern\SharpDX\WinRT\SharpDX.MediaFoundation.xml = Extern\SharpDX\WinRT\SharpDX.MediaFoundation.xml
+		Extern\SharpDX\WinRT\SharpDX.Toolkit.dll = Extern\SharpDX\WinRT\SharpDX.Toolkit.dll
+		Extern\SharpDX\WinRT\SharpDX.Toolkit.Game.dll = Extern\SharpDX\WinRT\SharpDX.Toolkit.Game.dll
+		Extern\SharpDX\WinRT\SharpDX.Toolkit.Game.xml = Extern\SharpDX\WinRT\SharpDX.Toolkit.Game.xml
+		Extern\SharpDX\WinRT\SharpDX.Toolkit.Graphics.dll = Extern\SharpDX\WinRT\SharpDX.Toolkit.Graphics.dll
+		Extern\SharpDX\WinRT\SharpDX.Toolkit.Graphics.xml = Extern\SharpDX\WinRT\SharpDX.Toolkit.Graphics.xml
+		Extern\SharpDX\WinRT\SharpDX.Toolkit.xml = Extern\SharpDX\WinRT\SharpDX.Toolkit.xml
+		Extern\SharpDX\WinRT\SharpDX.XAudio2.dll = Extern\SharpDX\WinRT\SharpDX.XAudio2.dll
+		Extern\SharpDX\WinRT\SharpDX.XAudio2.xml = Extern\SharpDX\WinRT\SharpDX.XAudio2.xml
+		Extern\SharpDX\WinRT\SharpDX.XInput.dll = Extern\SharpDX\WinRT\SharpDX.XInput.dll
+		Extern\SharpDX\WinRT\SharpDX.XInput.xml = Extern\SharpDX\WinRT\SharpDX.XInput.xml
+		Extern\SharpDX\WinRT\SharpDX.xml = Extern\SharpDX\WinRT\SharpDX.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Desktop", "Desktop", "{CBAABF1E-7986-412A-AAAF-299010A0DE43}"
+	ProjectSection(SolutionItems) = preProject
+		Extern\SharpDX\Desktop\SharpDX.D3DCompiler.dll = Extern\SharpDX\Desktop\SharpDX.D3DCompiler.dll
+		Extern\SharpDX\Desktop\SharpDX.D3DCompiler.xml = Extern\SharpDX\Desktop\SharpDX.D3DCompiler.xml
+		Extern\SharpDX\Desktop\SharpDX.Direct2D1.dll = Extern\SharpDX\Desktop\SharpDX.Direct2D1.dll
+		Extern\SharpDX\Desktop\SharpDX.Direct2D1.xml = Extern\SharpDX\Desktop\SharpDX.Direct2D1.xml
+		Extern\SharpDX\Desktop\SharpDX.Direct3D10.dll = Extern\SharpDX\Desktop\SharpDX.Direct3D10.dll
+		Extern\SharpDX\Desktop\SharpDX.Direct3D10.xml = Extern\SharpDX\Desktop\SharpDX.Direct3D10.xml
+		Extern\SharpDX\Desktop\SharpDX.Direct3D11.dll = Extern\SharpDX\Desktop\SharpDX.Direct3D11.dll
+		Extern\SharpDX\Desktop\SharpDX.Direct3D11.Effects.dll = Extern\SharpDX\Desktop\SharpDX.Direct3D11.Effects.dll
+		Extern\SharpDX\Desktop\SharpDX.Direct3D11.Effects.xml = Extern\SharpDX\Desktop\SharpDX.Direct3D11.Effects.xml
+		Extern\SharpDX\Desktop\SharpDX.Direct3D11.xml = Extern\SharpDX\Desktop\SharpDX.Direct3D11.xml
+		Extern\SharpDX\Desktop\SharpDX.Direct3D9.dll = Extern\SharpDX\Desktop\SharpDX.Direct3D9.dll
+		Extern\SharpDX\Desktop\SharpDX.Direct3D9.xml = Extern\SharpDX\Desktop\SharpDX.Direct3D9.xml
+		Extern\SharpDX\Desktop\SharpDX.DirectInput.dll = Extern\SharpDX\Desktop\SharpDX.DirectInput.dll
+		Extern\SharpDX\Desktop\SharpDX.DirectInput.xml = Extern\SharpDX\Desktop\SharpDX.DirectInput.xml
+		Extern\SharpDX\Desktop\SharpDX.DirectSound.dll = Extern\SharpDX\Desktop\SharpDX.DirectSound.dll
+		Extern\SharpDX\Desktop\SharpDX.DirectSound.xml = Extern\SharpDX\Desktop\SharpDX.DirectSound.xml
+		Extern\SharpDX\Desktop\SharpDX.dll = Extern\SharpDX\Desktop\SharpDX.dll
+		Extern\SharpDX\Desktop\SharpDX.DXGI.dll = Extern\SharpDX\Desktop\SharpDX.DXGI.dll
+		Extern\SharpDX\Desktop\SharpDX.DXGI.xml = Extern\SharpDX\Desktop\SharpDX.DXGI.xml
+		Extern\SharpDX\Desktop\SharpDX.MediaFoundation.dll = Extern\SharpDX\Desktop\SharpDX.MediaFoundation.dll
+		Extern\SharpDX\Desktop\SharpDX.MediaFoundation.xml = Extern\SharpDX\Desktop\SharpDX.MediaFoundation.xml
+		Extern\SharpDX\Desktop\SharpDX.RawInput.dll = Extern\SharpDX\Desktop\SharpDX.RawInput.dll
+		Extern\SharpDX\Desktop\SharpDX.RawInput.xml = Extern\SharpDX\Desktop\SharpDX.RawInput.xml
+		Extern\SharpDX\Desktop\SharpDX.Toolkit.Compiler.dll = Extern\SharpDX\Desktop\SharpDX.Toolkit.Compiler.dll
+		Extern\SharpDX\Desktop\SharpDX.Toolkit.Compiler.xml = Extern\SharpDX\Desktop\SharpDX.Toolkit.Compiler.xml
+		Extern\SharpDX\Desktop\SharpDX.Toolkit.dll = Extern\SharpDX\Desktop\SharpDX.Toolkit.dll
+		Extern\SharpDX\Desktop\SharpDX.Toolkit.Game.dll = Extern\SharpDX\Desktop\SharpDX.Toolkit.Game.dll
+		Extern\SharpDX\Desktop\SharpDX.Toolkit.Game.xml = Extern\SharpDX\Desktop\SharpDX.Toolkit.Game.xml
+		Extern\SharpDX\Desktop\SharpDX.Toolkit.Graphics.dll = Extern\SharpDX\Desktop\SharpDX.Toolkit.Graphics.dll
+		Extern\SharpDX\Desktop\SharpDX.Toolkit.Graphics.xml = Extern\SharpDX\Desktop\SharpDX.Toolkit.Graphics.xml
+		Extern\SharpDX\Desktop\SharpDX.Toolkit.xml = Extern\SharpDX\Desktop\SharpDX.Toolkit.xml
+		Extern\SharpDX\Desktop\SharpDX.XACT3.dll = Extern\SharpDX\Desktop\SharpDX.XACT3.dll
+		Extern\SharpDX\Desktop\SharpDX.XACT3.xml = Extern\SharpDX\Desktop\SharpDX.XACT3.xml
+		Extern\SharpDX\Desktop\SharpDX.XAudio2.dll = Extern\SharpDX\Desktop\SharpDX.XAudio2.dll
+		Extern\SharpDX\Desktop\SharpDX.XAudio2.xml = Extern\SharpDX\Desktop\SharpDX.XAudio2.xml
+		Extern\SharpDX\Desktop\SharpDX.XInput.dll = Extern\SharpDX\Desktop\SharpDX.XInput.dll
+		Extern\SharpDX\Desktop\SharpDX.XInput.xml = Extern\SharpDX\Desktop\SharpDX.XInput.xml
+		Extern\SharpDX\Desktop\SharpDX.xml = Extern\SharpDX\Desktop\SharpDX.xml
+		Extern\SharpDX\Desktop\sharpdx_direct3d11_1_effects_arm.dll = Extern\SharpDX\Desktop\sharpdx_direct3d11_1_effects_arm.dll
+		Extern\SharpDX\Desktop\sharpdx_direct3d11_1_effects_x64.dll = Extern\SharpDX\Desktop\sharpdx_direct3d11_1_effects_x64.dll
+		Extern\SharpDX\Desktop\sharpdx_direct3d11_1_effects_x86.dll = Extern\SharpDX\Desktop\sharpdx_direct3d11_1_effects_x86.dll
+		Extern\SharpDX\Desktop\sharpdx_direct3d11_effects_x64.dll = Extern\SharpDX\Desktop\sharpdx_direct3d11_effects_x64.dll
+		Extern\SharpDX\Desktop\sharpdx_direct3d11_effects_x86.dll = Extern\SharpDX\Desktop\sharpdx_direct3d11_effects_x86.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reactive", "Reactive", "{A8546D6D-878A-49BA-A535-663CC366D627}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RK.Common_WinRT", "RK.Common\RK.Common_WinRT.csproj", "{EC0420B7-BAA5-41E6-9B5D-8ED0D9126A8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RK.Common_Desktop", "RK.Common\RK.Common_Desktop.csproj", "{F990CD33-8182-4A82-BEF2-A2991872B5B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RK.Common.GraphicsEngine_Desktop", "RK.Common.GraphicsEngine\RK.Common.GraphicsEngine_Desktop.csproj", "{C34F2EC8-6B07-41DE-8C9B-DE39B7A51CA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RK.Common.GraphicsEngine_WinRT", "RK.Common.GraphicsEngine\RK.Common.GraphicsEngine_WinRT.csproj", "{BB8155A7-3797-4E47-836E-6D6F6F4D04AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Desktop", "Desktop", "{05BAB881-54F9-4972-9E97-364443227ED2}"
+	ProjectSection(SolutionItems) = preProject
+		Extern\Reactive\Desktop\System.Reactive.Core.dll = Extern\Reactive\Desktop\System.Reactive.Core.dll
+		Extern\Reactive\Desktop\System.Reactive.Core.xml = Extern\Reactive\Desktop\System.Reactive.Core.xml
+		Extern\Reactive\Desktop\System.Reactive.Interfaces.dll = Extern\Reactive\Desktop\System.Reactive.Interfaces.dll
+		Extern\Reactive\Desktop\System.Reactive.Interfaces.xml = Extern\Reactive\Desktop\System.Reactive.Interfaces.xml
+		Extern\Reactive\Desktop\System.Reactive.Linq.dll = Extern\Reactive\Desktop\System.Reactive.Linq.dll
+		Extern\Reactive\Desktop\System.Reactive.Linq.xml = Extern\Reactive\Desktop\System.Reactive.Linq.xml
+		Extern\Reactive\Desktop\System.Reactive.Providers.dll = Extern\Reactive\Desktop\System.Reactive.Providers.dll
+		Extern\Reactive\Desktop\System.Reactive.Providers.xml = Extern\Reactive\Desktop\System.Reactive.Providers.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RK.Wpf3DSampleBrowser", "RK.Wpf3DSampleBrowser\RK.Wpf3DSampleBrowser.csproj", "{3D09CD4F-2DEC-48A2-9C8D-31945C8CEF51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ribbon", "Ribbon", "{F996F91E-AF25-4BF9-B610-9B55F66DAD63}"
+	ProjectSection(SolutionItems) = preProject
+		Extern\Ribbon\Fluent.dll = Extern\Ribbon\Fluent.dll
+		Extern\Ribbon\Fluent.xml = Extern\Ribbon\Fluent.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Blend", "Blend", "{64648E07-1989-418D-AE20-226E2ADE398C}"
+	ProjectSection(SolutionItems) = preProject
+		Extern\Blend\System.Windows.Interactivity.dll = Extern\Blend\System.Windows.Interactivity.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ManagedDirectX", "ManagedDirectX", "{C6A4592E-0409-4773-8156-FA3B61CE0BC9}"
+	ProjectSection(SolutionItems) = preProject
+		Extern\ManagedDirectX\Microsoft.DirectX.Direct3D.DLL = Extern\ManagedDirectX\Microsoft.DirectX.Direct3D.DLL
+		Extern\ManagedDirectX\Microsoft.DirectX.Direct3DX.DLL = Extern\ManagedDirectX\Microsoft.DirectX.Direct3DX.DLL
+		Extern\ManagedDirectX\Microsoft.DirectX.DirectInput.DLL = Extern\ManagedDirectX\Microsoft.DirectX.DirectInput.DLL
+		Extern\ManagedDirectX\Microsoft.DirectX.DLL = Extern\ManagedDirectX\Microsoft.DirectX.DLL
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61DBFAC0-365B-40CB-BA8D-88FF63BB3049}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61DBFAC0-365B-40CB-BA8D-88FF63BB3049}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61DBFAC0-365B-40CB-BA8D-88FF63BB3049}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{61DBFAC0-365B-40CB-BA8D-88FF63BB3049}.Debug|ARM.ActiveCfg = Debug|ARM
+		{61DBFAC0-365B-40CB-BA8D-88FF63BB3049}.Debug|ARM.Build.0 = Debug|ARM
+		{61DBFAC0-365B-40CB-BA8D-88FF63BB3049}.Debug|ARM.Deploy.0 = Debug|ARM
+		{61DBFAC0-365B-40CB-BA8D-88FF63BB3049}.Debug|x64.ActiveCfg = Debug|x64
+		{61DBFAC0-365B-40CB-BA8D-88FF63BB3049}.Debug|x64.Build.0 = Debug|x64
+		{61DBFAC0-365B-40CB-BA8D-88FF63BB3049}.Debug|x64.Deploy.0 = Debug|x64
+		{61DBFAC0-365B-40CB-BA8D-88FF63BB3049}.Debug|x86.ActiveCfg = Debug|x86
+		{61DBFAC0-365B-40CB-BA8D-88FF63BB3049}.Debug|x86.Build.0 = Debug|x86
+		{61DBFAC0-365B-40CB-BA8D-88FF63BB3049}.Debug|x86.Deploy.0 = Debug|x86
+		{61DBFAC0-365B-40CB-BA8D-88FF63BB3049}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61DBFAC0-365B-40CB-BA8D-88FF63BB3049}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61DBFAC0-365B-40CB-BA8D-88FF63BB3049}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{61DBFAC0-365B-40CB-BA8D-88FF63BB3049}.Release|ARM.ActiveCfg = Release|ARM
+		{61DBFAC0-365B-40CB-BA8D-88FF63BB3049}.Release|ARM.Build.0 = Release|ARM
+		{61DBFAC0-365B-40CB-BA8D-88FF63BB3049}.Release|ARM.Deploy.0 = Release|ARM
+		{61DBFAC0-365B-40CB-BA8D-88FF63BB3049}.Release|x64.ActiveCfg = Release|x64
+		{61DBFAC0-365B-40CB-BA8D-88FF63BB3049}.Release|x64.Build.0 = Release|x64
+		{61DBFAC0-365B-40CB-BA8D-88FF63BB3049}.Release|x64.Deploy.0 = Release|x64
+		{61DBFAC0-365B-40CB-BA8D-88FF63BB3049}.Release|x86.ActiveCfg = Release|x86
+		{61DBFAC0-365B-40CB-BA8D-88FF63BB3049}.Release|x86.Build.0 = Release|x86
+		{61DBFAC0-365B-40CB-BA8D-88FF63BB3049}.Release|x86.Deploy.0 = Release|x86
+		{EC0420B7-BAA5-41E6-9B5D-8ED0D9126A8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC0420B7-BAA5-41E6-9B5D-8ED0D9126A8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC0420B7-BAA5-41E6-9B5D-8ED0D9126A8B}.Debug|ARM.ActiveCfg = Debug|ARM
+		{EC0420B7-BAA5-41E6-9B5D-8ED0D9126A8B}.Debug|ARM.Build.0 = Debug|ARM
+		{EC0420B7-BAA5-41E6-9B5D-8ED0D9126A8B}.Debug|x64.ActiveCfg = Debug|x64
+		{EC0420B7-BAA5-41E6-9B5D-8ED0D9126A8B}.Debug|x64.Build.0 = Debug|x64
+		{EC0420B7-BAA5-41E6-9B5D-8ED0D9126A8B}.Debug|x86.ActiveCfg = Debug|x86
+		{EC0420B7-BAA5-41E6-9B5D-8ED0D9126A8B}.Debug|x86.Build.0 = Debug|x86
+		{EC0420B7-BAA5-41E6-9B5D-8ED0D9126A8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC0420B7-BAA5-41E6-9B5D-8ED0D9126A8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC0420B7-BAA5-41E6-9B5D-8ED0D9126A8B}.Release|ARM.ActiveCfg = Release|ARM
+		{EC0420B7-BAA5-41E6-9B5D-8ED0D9126A8B}.Release|ARM.Build.0 = Release|ARM
+		{EC0420B7-BAA5-41E6-9B5D-8ED0D9126A8B}.Release|x64.ActiveCfg = Release|x64
+		{EC0420B7-BAA5-41E6-9B5D-8ED0D9126A8B}.Release|x64.Build.0 = Release|x64
+		{EC0420B7-BAA5-41E6-9B5D-8ED0D9126A8B}.Release|x86.ActiveCfg = Release|x86
+		{EC0420B7-BAA5-41E6-9B5D-8ED0D9126A8B}.Release|x86.Build.0 = Release|x86
+		{F990CD33-8182-4A82-BEF2-A2991872B5B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F990CD33-8182-4A82-BEF2-A2991872B5B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F990CD33-8182-4A82-BEF2-A2991872B5B2}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{F990CD33-8182-4A82-BEF2-A2991872B5B2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F990CD33-8182-4A82-BEF2-A2991872B5B2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F990CD33-8182-4A82-BEF2-A2991872B5B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F990CD33-8182-4A82-BEF2-A2991872B5B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F990CD33-8182-4A82-BEF2-A2991872B5B2}.Release|ARM.ActiveCfg = Release|Any CPU
+		{F990CD33-8182-4A82-BEF2-A2991872B5B2}.Release|x64.ActiveCfg = Release|Any CPU
+		{F990CD33-8182-4A82-BEF2-A2991872B5B2}.Release|x86.ActiveCfg = Release|Any CPU
+		{C34F2EC8-6B07-41DE-8C9B-DE39B7A51CA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C34F2EC8-6B07-41DE-8C9B-DE39B7A51CA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C34F2EC8-6B07-41DE-8C9B-DE39B7A51CA1}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{C34F2EC8-6B07-41DE-8C9B-DE39B7A51CA1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C34F2EC8-6B07-41DE-8C9B-DE39B7A51CA1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C34F2EC8-6B07-41DE-8C9B-DE39B7A51CA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C34F2EC8-6B07-41DE-8C9B-DE39B7A51CA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C34F2EC8-6B07-41DE-8C9B-DE39B7A51CA1}.Release|ARM.ActiveCfg = Release|Any CPU
+		{C34F2EC8-6B07-41DE-8C9B-DE39B7A51CA1}.Release|x64.ActiveCfg = Release|Any CPU
+		{C34F2EC8-6B07-41DE-8C9B-DE39B7A51CA1}.Release|x86.ActiveCfg = Release|Any CPU
+		{BB8155A7-3797-4E47-836E-6D6F6F4D04AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB8155A7-3797-4E47-836E-6D6F6F4D04AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB8155A7-3797-4E47-836E-6D6F6F4D04AA}.Debug|ARM.ActiveCfg = Debug|ARM
+		{BB8155A7-3797-4E47-836E-6D6F6F4D04AA}.Debug|ARM.Build.0 = Debug|ARM
+		{BB8155A7-3797-4E47-836E-6D6F6F4D04AA}.Debug|x64.ActiveCfg = Debug|x64
+		{BB8155A7-3797-4E47-836E-6D6F6F4D04AA}.Debug|x64.Build.0 = Debug|x64
+		{BB8155A7-3797-4E47-836E-6D6F6F4D04AA}.Debug|x86.ActiveCfg = Debug|x86
+		{BB8155A7-3797-4E47-836E-6D6F6F4D04AA}.Debug|x86.Build.0 = Debug|x86
+		{BB8155A7-3797-4E47-836E-6D6F6F4D04AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB8155A7-3797-4E47-836E-6D6F6F4D04AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB8155A7-3797-4E47-836E-6D6F6F4D04AA}.Release|ARM.ActiveCfg = Release|ARM
+		{BB8155A7-3797-4E47-836E-6D6F6F4D04AA}.Release|ARM.Build.0 = Release|ARM
+		{BB8155A7-3797-4E47-836E-6D6F6F4D04AA}.Release|x64.ActiveCfg = Release|x64
+		{BB8155A7-3797-4E47-836E-6D6F6F4D04AA}.Release|x64.Build.0 = Release|x64
+		{BB8155A7-3797-4E47-836E-6D6F6F4D04AA}.Release|x86.ActiveCfg = Release|x86
+		{BB8155A7-3797-4E47-836E-6D6F6F4D04AA}.Release|x86.Build.0 = Release|x86
+		{3D09CD4F-2DEC-48A2-9C8D-31945C8CEF51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D09CD4F-2DEC-48A2-9C8D-31945C8CEF51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D09CD4F-2DEC-48A2-9C8D-31945C8CEF51}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{3D09CD4F-2DEC-48A2-9C8D-31945C8CEF51}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3D09CD4F-2DEC-48A2-9C8D-31945C8CEF51}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3D09CD4F-2DEC-48A2-9C8D-31945C8CEF51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D09CD4F-2DEC-48A2-9C8D-31945C8CEF51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D09CD4F-2DEC-48A2-9C8D-31945C8CEF51}.Release|ARM.ActiveCfg = Release|Any CPU
+		{3D09CD4F-2DEC-48A2-9C8D-31945C8CEF51}.Release|x64.ActiveCfg = Release|Any CPU
+		{3D09CD4F-2DEC-48A2-9C8D-31945C8CEF51}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A8228899-4826-4560-8C77-616E2E50EF44} = {9B810CC8-4C95-4595-8C11-EA7F22879523}
+		{A8546D6D-878A-49BA-A535-663CC366D627} = {9B810CC8-4C95-4595-8C11-EA7F22879523}
+		{F996F91E-AF25-4BF9-B610-9B55F66DAD63} = {9B810CC8-4C95-4595-8C11-EA7F22879523}
+		{64648E07-1989-418D-AE20-226E2ADE398C} = {9B810CC8-4C95-4595-8C11-EA7F22879523}
+		{C6A4592E-0409-4773-8156-FA3B61CE0BC9} = {9B810CC8-4C95-4595-8C11-EA7F22879523}
+		{6A7B06DD-8A35-43AF-B6C9-70DC3F27F165} = {A8228899-4826-4560-8C77-616E2E50EF44}
+		{CBAABF1E-7986-412A-AAAF-299010A0DE43} = {A8228899-4826-4560-8C77-616E2E50EF44}
+		{05BAB881-54F9-4972-9E97-364443227ED2} = {A8546D6D-878A-49BA-A535-663CC366D627}
+	EndGlobalSection
+EndGlobal

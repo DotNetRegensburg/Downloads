@@ -1,0 +1,8 @@
+﻿<Application x:Class="RK.Wpf3DSampleBrowser.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary Source="pack://application:,,,/Fluent;Component/Themes/Office2010/Blue.xaml" />
+    </Application.Resources>
+</Application>

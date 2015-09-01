@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F990CD33-8182-4A82-BEF2-A2991872B5B2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RK.Common</RootNamespace>
+    <AssemblyName>RK.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <BaseIntermediateOutputPath>obj.Desktop</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin.Desktop\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DESKTOP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin.Desktop\Release\</OutputPath>
+    <DefineConstants>TRACE;DESKTOP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonExtensions.cs" />
+    <Compile Include="CommonExtensions.Desktop.cs" />
+    <Compile Include="CommonExtensions.WinRT.cs" />
+    <Compile Include="CommonLibraryException.cs" />
+    <Compile Include="CommonUtil.cs" />
+    <Compile Include="Gui\WpfInputCatcher.cs" />
+    <Compile Include="Mvvm\CommandManagerHelper.cs" />
+    <Compile Include="Mvvm\DelegateCommand.cs" />
+    <Compile Include="Mvvm\ViewModelBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\DummyDisposable.cs" />
+    <Compile Include="Util\WriteProtectedCollection.cs" />
+    <Compile Include="Util\_AssemblyResources\AssemblyResourceFileAttribute.cs" />
+    <Compile Include="Util\_AssemblyResources\AssemblyResourceInfo.cs" />
+    <Compile Include="Util\_AssemblyResources\AssemblyResourceLink.cs" />
+    <Compile Include="Util\_AssemblyResources\AssemblyResourceReader.cs" />
+    <Compile Include="_Math\AxisAlignedBox.cs" />
+    <Compile Include="_Math\BoundingSphere.cs" />
+    <Compile Include="_Math\Color4.Colors.cs" />
+    <Compile Include="_Math\Color4.cs" />
+    <Compile Include="_Math\EngineMath.cs" />
+    <Compile Include="_Math\Line3D.cs" />
+    <Compile Include="_Math\Matrix3.cs" />
+    <Compile Include="_Math\Matrix4.cs" />
+    <Compile Include="_Math\Matrix4Stack.cs" />
+    <Compile Include="_Math\Plane.cs" />
+    <Compile Include="_Math\Quaternion.cs" />
+    <Compile Include="_Math\Ray.cs" />
+    <Compile Include="_Math\Sphere.cs" />
+    <Compile Include="_Math\Vector2.cs" />
+    <Compile Include="_Math\Vector3.cs" />
+    <Compile Include="_Math\Vector4.cs" />
+    <Compile Include="_Misc.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

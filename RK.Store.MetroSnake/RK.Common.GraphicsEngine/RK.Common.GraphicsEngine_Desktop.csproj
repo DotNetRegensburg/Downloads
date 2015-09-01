@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C34F2EC8-6B07-41DE-8C9B-DE39B7A51CA1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RK.Common.GraphicsEngine</RootNamespace>
+    <AssemblyName>RK.Common.GraphicsEngine</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <BaseIntermediateOutputPath>obj.Desktop</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin.Desktop\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DESKTOP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin.Desktop\Release\</OutputPath>
+    <DefineConstants>TRACE;DESKTOP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SharpDX, Version=2.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Extern\SharpDX\Desktop\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct2D1, Version=2.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Extern\SharpDX\Desktop\SharpDX.Direct2D1.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D11, Version=2.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Extern\SharpDX\Desktop\SharpDX.Direct3D11.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D9">
+      <HintPath>..\Extern\SharpDX\Desktop\SharpDX.Direct3D9.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DXGI, Version=2.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Extern\SharpDX\Desktop\SharpDX.DXGI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Reactive.Core, Version=2.0.20823.0, Culture=neutral, PublicKeyToken=f300afd708cefcd3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Extern\Reactive\Desktop\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces, Version=2.0.20823.0, Culture=neutral, PublicKeyToken=f300afd708cefcd3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Extern\Reactive\Desktop\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq, Version=2.0.20823.0, Culture=neutral, PublicKeyToken=f300afd708cefcd3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Extern\Reactive\Desktop\System.Reactive.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Providers, Version=2.0.20823.0, Culture=neutral, PublicKeyToken=f300afd708cefcd3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Extern\Reactive\Desktop\System.Reactive.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animations\AnimationHandler.cs" />
+    <Compile Include="Animations\AnimationSequence.cs" />
+    <Compile Include="Animations\AnimationSequenceBuilder.cs" />
+    <Compile Include="Animations\AnimationState.cs" />
+    <Compile Include="Animations\Drawing3DAnimationExtensions.cs" />
+    <Compile Include="Animations\StandardAnimationExtensions.cs" />
+    <Compile Include="Animations\_Misc.cs" />
+    <Compile Include="Animations\_Specialized\Move3DAnimationSequence.cs" />
+    <Compile Include="Animations\_Specialized\RotateHVAnimationSequence.cs" />
+    <Compile Include="Animations\_Specialized\Scale3DAnimationSequence.cs" />
+    <Compile Include="Animations\_Standard\CallActionAnimationSequence.cs" />
+    <Compile Include="Animations\_Standard\WaitTimePassedAnimationSequence.cs" />
+    <Compile Include="Animations\_Standard\DelayAnimationSequence.cs" />
+    <Compile Include="Animations\_Standard\IncreaseFloatAnimationSequence.cs" />
+    <Compile Include="Animations\_Standard\WaitFinishedAnimationSequence.cs" />
+    <Compile Include="CommonExtensions.cs" />
+    <Compile Include="Core\GraphicsConfiguration.cs" />
+    <Compile Include="Core\GraphicsCore.cs" />
+    <Compile Include="Core\GraphicsHelper.cs" />
+    <Compile Include="Core\_DeviceHandler\DeviceHandlerD2D.cs" />
+    <Compile Include="Core\_DeviceHandler\DeviceHandlerD3D11.cs" />
+    <Compile Include="Core\_DeviceHandler\DeviceHandlerD3D9.cs" />
+    <Compile Include="Core\_DeviceHandler\DeviceHandlerDWrite.cs" />
+    <Compile Include="Core\_DeviceHandler\DeviceHandlerDXGI.cs" />
+    <Compile Include="Core\_DeviceHandler\DeviceHandlerWIC.cs" />
+    <Compile Include="Core\_Misc.cs" />
+    <Compile Include="Drawing2D\Drawing2DObject.cs" />
+    <Compile Include="Drawing2D\Graphics2DCache.cs" />
+    <Compile Include="Drawing2D\RenderState2D.cs" />
+    <Compile Include="Drawing2D\_Objects\TextOverlayObject.cs" />
+    <Compile Include="Drawing3D\Camera.cs" />
+    <Compile Include="Drawing3D\Graphics3D.cs" />
+    <Compile Include="Drawing3D\PickingInformation.cs" />
+    <Compile Include="Drawing3D\RenderState.cs" />
+    <Compile Include="Drawing3D\Resources\BlendStateResource.cs" />
+    <Compile Include="Drawing3D\Resources\DepthStencilStateResource.cs" />
+    <Compile Include="Drawing3D\Resources\GeometryResource.cs" />
+    <Compile Include="Drawing3D\Resources\IRenderableResource.cs" />
+    <Compile Include="Drawing3D\Resources\MaterialResource.cs" />
+    <Compile Include="Drawing3D\Resources\RasterizerStateResource.cs" />
+    <Compile Include="Drawing3D\Resources\Resource.cs" />
+    <Compile Include="Drawing3D\Resources\ResourceDictionary.cs" />
+    <Compile Include="Drawing3D\Resources\TexturePainterResource.cs" />
+    <Compile Include="Drawing3D\Resources\TextureResource.cs" />
+    <Compile Include="Drawing3D\Resources\_ConstantBuffers\ConstantBufferResource.cs" />
+    <Compile Include="Drawing3D\Resources\_ConstantBuffers\TypeSafeConstantBuffer.cs" />
+    <Compile Include="Drawing3D\Resources\_Materials\SimpleColoredDisplacedMaterialResource.cs" />
+    <Compile Include="Drawing3D\Resources\_Materials\SimpleColoredMaterialResource.cs" />
+    <Compile Include="Drawing3D\Resources\_Misc.cs" />
+    <Compile Include="Drawing3D\Resources\_Shaders\PixelShaderResource.cs" />
+    <Compile Include="Drawing3D\Resources\_Shaders\ShaderResource.cs" />
+    <Compile Include="Drawing3D\Resources\_Shaders\VertexShaderResource.cs" />
+    <Compile Include="Drawing3D\Resources\_Textures\BitmapTextureResource.cs" />
+    <Compile Include="Drawing3D\Resources\_Textures\CopiedTextureResource.cs" />
+    <Compile Include="Drawing3D\Resources\_Textures\DrawingBrushTextureResource.cs" />
+    <Compile Include="Drawing3D\Resources\_Textures\ICopiedTextureSource.cs" />
+    <Compile Include="Drawing3D\Resources\_Textures\LinearGradientTextureResource.cs" />
+    <Compile Include="Drawing3D\Resources\_Textures\StandardTextureResource.cs" />
+    <Compile Include="Drawing3D\Scene.cs" />
+    <Compile Include="Drawing3D\SceneLayer.cs" />
+    <Compile Include="Drawing3D\SceneObject.cs" />
+    <Compile Include="Drawing3D\SceneSpacialObject.cs" />
+    <Compile Include="Drawing3D\UpdateState.cs" />
+    <Compile Include="Drawing3D\_Misc.cs" />
+    <Compile Include="GraphicsEngineException.cs" />
+    <Compile Include="Gui\Direct3D11Image.cs" />
+    <Compile Include="Gui\Direct3D11SceneImage.cs" />
+    <Compile Include="Gui\HigherD3DImageSource.cs" />
+    <Compile Include="Gui\WpfModelViewerControl.xaml.cs">
+      <DependentUpon>WpfModelViewerControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\Construction\AnimationData.cs" />
+    <Compile Include="Objects\Construction\GeometryData.cs" />
+    <Compile Include="Objects\Construction\InstancingData.cs" />
+    <Compile Include="Objects\Construction\TextureData.cs" />
+    <Compile Include="Objects\Construction\Triangle.cs" />
+    <Compile Include="Objects\Construction\Vertex.cs" />
+    <Compile Include="Objects\Construction\VertexStructure.Builders.cs" />
+    <Compile Include="Objects\Construction\VertexStructure.cs" />
+    <Compile Include="Objects\Construction\_Extensions.cs" />
+    <Compile Include="Objects\Construction\_Materials\MaterialProperties.cs" />
+    <Compile Include="Objects\Construction\_Materials\WpfMaterialProperties.cs" />
+    <Compile Include="Objects\Construction\_Misc.cs" />
+    <Compile Include="Objects\CubeObject.cs" />
+    <Compile Include="Objects\GenericObject.cs" />
+    <Compile Include="Objects\ObjectTypes\BoxType.cs" />
+    <Compile Include="Objects\ObjectTypes\ComplexPalletType.cs" />
+    <Compile Include="Objects\ObjectTypes\ComplexRollBoxType.cs" />
+    <Compile Include="Objects\ObjectTypes\CoordinateAxesType.cs" />
+    <Compile Include="Objects\ObjectTypes\GenericObjectType.cs" />
+    <Compile Include="Objects\ObjectTypes\GroundType.cs" />
+    <Compile Include="Objects\ObjectTypes\LabelType.cs" />
+    <Compile Include="Objects\ObjectTypes\Loaders\ACFileLoader.cs" />
+    <Compile Include="Objects\ObjectTypes\ObjectType.cs" />
+    <Compile Include="Objects\ObjectTypes\PalletType.cs" />
+    <Compile Include="Objects\ObjectTypes\RackType.cs" />
+    <Compile Include="Objects\ObjectTypes\Grid3DType.cs" />
+    <Compile Include="Objects\ObjectTypes\SimpleMachineType.cs" />
+    <Compile Include="Objects\TexturePainter.cs" />
+    <Compile Include="Objects\Wpf\WpfConstructed3DModel.cs" />
+    <Compile Include="Objects\Wpf\WpfCubeModel.cs" />
+    <Compile Include="Objects\Wpf\WpfGenericModel.cs" />
+    <Compile Include="Objects\Wpf\WpfGrid3DModel.cs" />
+    <Compile Include="Objects\_Misc\GroundTile.cs" />
+    <Compile Include="Objects\_Misc\GroundTileInfo.cs" />
+    <Compile Include="Objects\_Misc\RackColumnProperties.cs" />
+    <Compile Include="Objects\_Misc\RackRowProperties.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StandardVertex.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\PixelShaders\SimpleRendering.cso" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\PixelShaders\SimpleDemoRendering.cso" />
+    <None Include="Resources\PixelShaders\SimpleRendering.hlsl" />
+    <EmbeddedResource Include="Resources\PixelShaders\SimpleRenderingTextured.cso" />
+    <EmbeddedResource Include="Resources\PixelShaders\SimpleTransformedTexturedRendering.cso" />
+    <EmbeddedResource Include="Resources\VertexShaders\SimpleRendering.cso" />
+    <EmbeddedResource Include="Resources\VertexShaders\SimpleTransformedTexturedRendering.cso" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PixelShaders\SimpleRenderingTextured.hlsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Circle_16x16.png" />
+    <Resource Include="Resources\Images\RotateHorizontal_16x16.png" />
+    <Resource Include="Resources\Images\RotateVertical_16x16.png" />
+    <EmbeddedResource Include="Resources\PixelShaders\SimpleDemoRendering.hlsl" />
+    <Content Include="Resources\PixelShaders\SimpleTransformedTexturedRendering.hlsl" />
+    <Resource Include="Resources\Images\Search_16x16.png" />
+    <EmbeddedResource Include="Resources\VertexShaders\SimpleDemoRendering.cso" />
+    <EmbeddedResource Include="Resources\VertexShaders\SimpleDemoRendering.hlsl" />
+    <EmbeddedResource Include="Resources\VertexShaders\SimpleDisplacedRendering.cso" />
+    <None Include="Resources\VertexShaders\SimpleDisplacedRendering.hlsl" />
+    <Content Include="Resources\VertexShaders\SimpleTransformedTexturedRendering.hlsl" />
+    <None Include="Resources\VertexShaders\SimpleRendering.hlsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Util\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RK.Common\RK.Common_Desktop.csproj">
+      <Project>{f990cd33-8182-4a82-bef2-a2991872b5b2}</Project>
+      <Name>RK.Common_Desktop</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Gui\WpfModelViewerControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>"%25DXSDK_DIR%25Utilities\bin\x64\FXC.exe" /T vs_4_0_level_9_1 /Fo "$(ProjectDir)Resources/VertexShaders/SimpleRendering.cso" "$(ProjectDir)Resources/VertexShaders/SimpleRendering.hlsl"
+"%25DXSDK_DIR%25Utilities\bin\x64\FXC.exe" /T vs_4_0 /Fo "$(ProjectDir)Resources/VertexShaders/SimpleDisplacedRendering.cso" "$(ProjectDir)Resources/VertexShaders/SimpleDisplacedRendering.hlsl"
+"%25DXSDK_DIR%25Utilities\bin\x64\FXC.exe" /T vs_4_0_level_9_1 /Fo "$(ProjectDir)Resources/VertexShaders/SimpleDemoRendering.cso" "$(ProjectDir)Resources/VertexShaders/SimpleDemoRendering.hlsl"
+"%25DXSDK_DIR%25Utilities\bin\x64\FXC.exe" /T ps_4_0_level_9_1 /Fo "$(ProjectDir)Resources/PixelShaders/SimpleRendering.cso" "$(ProjectDir)Resources/PixelShaders/SimpleRendering.hlsl"
+"%25DXSDK_DIR%25Utilities\bin\x64\FXC.exe" /T ps_4_0_level_9_1 /Fo "$(ProjectDir)Resources/PixelShaders/SimpleDemoRendering.cso" "$(ProjectDir)Resources/PixelShaders/SimpleDemoRendering.hlsl"
+"%25DXSDK_DIR%25Utilities\bin\x64\FXC.exe" /T ps_4_0_level_9_1 /Fo "$(ProjectDir)Resources/PixelShaders/SimpleRenderingTextured.cso" "$(ProjectDir)Resources/PixelShaders/SimpleRenderingTextured.hlsl"
+
+"%25DXSDK_DIR%25Utilities\bin\x64\FXC.exe" /T vs_4_0_level_9_1 /Fo "$(ProjectDir)Resources/VertexShaders/SimpleTransformedTexturedRendering.cso" "$(ProjectDir)Resources/VertexShaders/SimpleTransformedTexturedRendering.hlsl"
+"%25DXSDK_DIR%25Utilities\bin\x64\FXC.exe" /T ps_4_0_level_9_1 /Fo "$(ProjectDir)Resources/PixelShaders/SimpleTransformedTexturedRendering.cso" "$(ProjectDir)Resources/PixelShaders/SimpleTransformedTexturedRendering.hlsl"</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

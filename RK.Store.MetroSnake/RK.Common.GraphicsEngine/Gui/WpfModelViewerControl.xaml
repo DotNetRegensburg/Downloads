@@ -1,0 +1,120 @@
+﻿<UserControl x:Class="RK.Common.GraphicsEngine.Gui.WpfModelViewerControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:models="clr-namespace:RK.Common.GraphicsEngine.Objects.Wpf"
+             MouseWheel="OnMouseWheel"
+             ClipToBounds="True"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300"
+             Name="ControlMain">
+    <UserControl.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0.1,1">
+            <GradientStop Offset="0" Color="#FF4080FF" />
+            <GradientStop Offset="0.3" Color="#FF80B0FF" />
+            <GradientStop Offset="1" Color="#FF4372FB" />
+        </LinearGradientBrush>
+    </UserControl.Background>
+
+    <Grid>
+        <Grid Name="m_viewportGrid"
+              Background="Transparent">
+            <Grid.Resources>
+                <PerspectiveCamera x:Key="MainCamera"
+                                       Position="3,3,3"
+                                       LookDirection="-10,-7,-10"
+                                       UpDirection="0,1,0"
+                                       FieldOfView="45" 
+                                       NearPlaneDistance="1"
+                                       FarPlaneDistance="1000"/>
+            </Grid.Resources>
+
+            <!-- Define the viewport for main contents -->
+            <Viewport3D Camera="{DynamicResource ResourceKey=MainCamera}"
+                        Name="m_viewport3D"
+                        ClipToBounds="False" Cursor="Hand">
+                <!-- Define ground model -->
+                <ModelUIElement3D>
+                    <AmbientLight Color="#FF333333"/>
+                </ModelUIElement3D>
+                <ModelUIElement3D>
+                    <DirectionalLight x:Name="m_mainLight" Color="White" Direction="-0.8,-1,-0.8" />
+                </ModelUIElement3D>
+                <models:WpfGrid3DModel TilesX="100" TilesZ="100" StrokeBrushGroupLine="White"
+                                           TileWidth="1"
+                                           x:Name="m_grid3D">
+                    <models:WpfGrid3DModel.FloorBrush>
+                        <LinearGradientBrush Opacity="0.2">
+                            <GradientStop Offset="0" Color="LightBlue" />
+                            <GradientStop Offset="1" Color="LightCyan" />
+                        </LinearGradientBrush>
+                    </models:WpfGrid3DModel.FloorBrush>
+                </models:WpfGrid3DModel>
+                
+                <!-- Define space for custom models -->
+                <ContainerUIElement3D x:Name="m_mainModelContainer">
+
+                </ContainerUIElement3D>
+            </Viewport3D>
+        </Grid>
+
+        <!-- Define user interface -->
+        <Grid Visibility="{Binding ElementName=ControlMain, Path=ControlsVisibility, Mode=OneWay}">
+            <!-- Define the zoom bar -->
+            <DockPanel LastChildFill="True"
+                       HorizontalAlignment="Right" VerticalAlignment="Stretch">
+                <Image Source="/RK.Common.GraphicsEngine;component/Resources/Images/Search_16x16.png" 
+                       DockPanel.Dock="Top" 
+                       Width="16" Height="16"
+                       Margin="5,5,5,0"/>
+                <ScrollBar Orientation="Vertical"
+                           Margin="5,5,5,25"
+                           SmallChange="0.1" LargeChange="1.0"
+                           Minimum="{Binding ElementName=ControlMain, Path=CameraMinimumDistance, Mode=OneWay}"
+                           Maximum="{Binding ElementName=ControlMain, Path=CameraMaximumDistance, Mode=OneWay}"
+                           Value="{Binding ElementName=ControlMain, Path=CameraDistance, Mode=TwoWay}"/>
+            </DockPanel>
+            
+            <!-- Define bars for rotations-->
+            <Grid VerticalAlignment="Bottom" HorizontalAlignment="Stretch"
+                  Height="25"
+                  Margin="5,0,25,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                
+                <DockPanel LastChildFill="True"
+                           Grid.Column="0" Margin="5,0,5,0">
+                    <Image Source="/RK.Common.GraphicsEngine;component/Resources/Images/RotateVertical_16x16.png" 
+                       DockPanel.Dock="Left" 
+                       Width="16" Height="16"
+                       Margin="5,7,5,0"/>
+                    <ScrollBar Orientation="Horizontal"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Bottom"
+                       Height="15" 
+                       SmallChange="0.1" LargeChange="1.0"
+                       Minimum="0"
+                       Maximum="89"
+                       Value="{Binding ElementName=ControlMain, Path=CameraVerticalRotation, Mode=TwoWay}"/>
+                </DockPanel>
+
+                <DockPanel LastChildFill="True"
+                           Grid.Column="1" Margin="5,0,5,0">
+                    <Image Source="/RK.Common.GraphicsEngine;component/Resources/Images/RotateHorizontal_16x16.png" 
+                       DockPanel.Dock="Left" 
+                       Width="16" Height="16"
+                       Margin="5,7,5,0"/>
+                    <ScrollBar Orientation="Horizontal"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Bottom"
+                       Height="16" 
+                       SmallChange="0.1" LargeChange="1.0"
+                       Minimum="0"
+                       Maximum="360"
+                       Value="{Binding ElementName=ControlMain, Path=CameraHorizontalRotation, Mode=TwoWay}"/>
+                </DockPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

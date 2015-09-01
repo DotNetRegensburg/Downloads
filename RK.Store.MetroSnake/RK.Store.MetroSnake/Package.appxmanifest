@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="c6bd387b-c74e-4035-8506-3ab7d7c6590b" Publisher="CN=Roland" Version="1.0.0.5" />
+  <Properties>
+    <DisplayName>Mosaic Snake 3D</DisplayName>
+    <PublisherDisplayName>Roland König</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="RK.Store.MetroSnake.App">
+      <VisualElements DisplayName="Mosaic Snake 3D" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="This game brings the popular Snake to Windows 8!" ForegroundText="dark" BackgroundColor="cornflowerBlue">
+        <DefaultTile ShowName="noLogos" />
+        <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="cornflowerBlue" />
+        <InitialRotationPreference>
+          <Rotation Preference="landscape" />
+        </InitialRotationPreference>
+      </VisualElements>
+    </Application>
+  </Applications>
+</Package>

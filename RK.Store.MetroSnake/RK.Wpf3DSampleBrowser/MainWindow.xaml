@@ -1,0 +1,45 @@
+﻿<fluent:RibbonWindow x:Class="RK.Wpf3DSampleBrowser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:fluent="clr-namespace:Fluent;assembly=Fluent"
+        xmlns:self="clr-namespace:RK.Wpf3DSampleBrowser"
+        Title="MainWindow" Height="350" Width="525"
+        Icon="/Resources/Icon.ico">
+    
+    <!-- Define needed resources -->
+    <fluent:RibbonWindow.Resources>
+        <DataTemplate x:Key="SampleButtonTemplate"
+                      DataType="self:SampleInformation">
+            <fluent:Button Header="{Binding Path=DisplayName}" 
+                           Command="{Binding Path=ApplySample}"
+                           CommandParameter="{Binding}">
+                <fluent:Button.LargeIcon>
+                    <Image Source="{Binding Path=ImageUrl}" />
+                </fluent:Button.LargeIcon>
+            </fluent:Button>
+        </DataTemplate>
+    </fluent:RibbonWindow.Resources>
+    
+    <!-- Define main data context -->
+    <fluent:RibbonWindow.DataContext>
+        <self:MainWindowSource />
+    </fluent:RibbonWindow.DataContext>
+    
+    <!-- Define UI -->
+    <DockPanel LastChildFill="True">
+        <fluent:Ribbon DockPanel.Dock="Top" 
+                       IsAutomaticCollapseEnabled="False" 
+                       IsQuickAccessToolBarVisible="False">
+            <fluent:RibbonTabItem Header="Samples">
+                <fluent:RibbonGroupBox Header="WPF 3D" 
+                                       ItemsSource="{Binding Path=WpfSamples}"
+                                       ItemTemplate="{StaticResource SampleButtonTemplate}" />
+                <fluent:RibbonGroupBox Header="SharpDX (DirectX 11)"
+                                       ItemsSource="{Binding Path=SharpDXSamples}"
+                                       ItemTemplate="{StaticResource SampleButtonTemplate}" />
+            </fluent:RibbonTabItem>
+        </fluent:Ribbon>
+        
+        <ContentControl Content="{Binding Path=SelectedControl}" />
+    </DockPanel>
+</fluent:RibbonWindow>

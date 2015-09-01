@@ -1,0 +1,122 @@
+﻿<SwapChainBackgroundPanel
+    x:Class="RK.Store.MetroSnake.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RK.Store.MetroSnake"
+    xmlns:localui="using:RK.Store.MetroSnake.UI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:tk="using:WinRTXamlToolkit.Controls"
+    mc:Ignorable="d">
+    
+    <SwapChainBackgroundPanel.Resources>
+        <Storyboard x:Name="PowerupGridControlFadeIn">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleX)" Storyboard.TargetName="PowerupGridControl">
+                <EasingDoubleKeyFrame KeyTime="0" Value="5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.1" Value="5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.9" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)" Storyboard.TargetName="PowerupGridControl">
+                <EasingDoubleKeyFrame KeyTime="0" Value="5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.1" Value="5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.9" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames EnableDependentAnimation="True" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="PowerupGridControl">
+                <EasingPointKeyFrame KeyTime="0" Value="0,0"/>
+                <EasingPointKeyFrame KeyTime="0:0:3.1" Value="0,0"/>
+                <EasingPointKeyFrame KeyTime="0:0:3.9" Value="0,0"/>
+            </PointAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="itemsControl">
+                <EasingDoubleKeyFrame KeyTime="0:0:3.1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.2" Value="0.695"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock">
+                <EasingDoubleKeyFrame KeyTime="0:0:3.1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.9" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.2" Value="0.995"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="PowerupGridControl">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.9" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimation Duration="0:0:3.9" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="MainContentGrid" d:IsOptimized="True"/>
+        </Storyboard>
+    </SwapChainBackgroundPanel.Resources>
+    
+    <Grid x:Name="MainContentGrid" Background="#FF16499A"
+          Height="100" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBox x:Uid="BlubBlub" Text="Badf" />
+
+        <Frame Name="MainFrame"
+               Grid.RowSpan="2"
+               Width="NaN" Height="NaN"/>
+
+        <!-- Define title bar-->
+        <StackPanel Name="ToolBar"
+                    Orientation="Vertical"
+                    Grid.Row="0" Height="100"
+                    VerticalAlignment="Top">
+
+            <StackPanel.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Offset="0" Color="#333333" />
+                    <GradientStop Offset="1" Color="#222222" />
+                </LinearGradientBrush>
+            </StackPanel.Background>
+
+            <!-- Define the button panel-->
+            <Grid>
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Left"
+                            Margin="120,7,0,0">
+                    <Button Click="OnCmdPauseClick"
+                            x:Uid="MainScreenPause"
+                            Style="{StaticResource PauseAppBarButtonStyle}">
+                    </Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Center">
+                    <TextBlock
+                        x:Uid="MainScreenScore"
+                        FontFamily="Segoe UI Light"
+                        FontSize="70"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Margin="10"
+                        Text="Score:" />
+                    <TextBlock x:Name="m_txtPoints"
+                        FontFamily="Segoe UI Light"
+                        FontSize="70"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Margin="10"
+                        Text="{Binding Points}" />
+                </StackPanel>
+
+
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Right"
+                            Margin="0,7,120,0">
+                    <Button x:Uid="MainScreenGiveFeedback"
+                            Style="{StaticResource CommentAppBarButtonStyle}"  />
+                    <Button x:Uid="MainScreenMoreInfo"
+                            Style="{StaticResource HelpAppBarButtonStyle}"/>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+
+        <Rectangle Height="3" Grid.Row="0" VerticalAlignment="Bottom">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Offset="0" Color="Black" />
+                    <GradientStop Offset="1" Color="LightCyan" />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+    </Grid>
+</SwapChainBackgroundPanel>
