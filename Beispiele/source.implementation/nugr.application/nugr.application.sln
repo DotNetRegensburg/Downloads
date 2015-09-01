@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nugr.application", "nugr.application\nugr.application.csproj", "{74D3CCD1-803E-42C6-BA9E-DEA60360D216}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test.application", "test.application\test.application.csproj", "{54CBE817-2022-4C53-A276-9099B1288E27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74D3CCD1-803E-42C6-BA9E-DEA60360D216}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74D3CCD1-803E-42C6-BA9E-DEA60360D216}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74D3CCD1-803E-42C6-BA9E-DEA60360D216}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74D3CCD1-803E-42C6-BA9E-DEA60360D216}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54CBE817-2022-4C53-A276-9099B1288E27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54CBE817-2022-4C53-A276-9099B1288E27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54CBE817-2022-4C53-A276-9099B1288E27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54CBE817-2022-4C53-A276-9099B1288E27}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

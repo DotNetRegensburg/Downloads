@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nugr.contract.application", "nugr.contract.application\nugr.contract.application.csproj", "{77AC35D8-F9BA-4453-A217-B87365C0B33B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nugr.contract.dbadapter", "nugr.contract.dbadapter\nugr.contract.dbadapter.csproj", "{9F527EB7-CD05-48FA-87E1-64CD29DE78C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nugr.contract.calculator", "nugr.contract.calculator\nugr.contract.calculator.csproj", "{21BDEB49-CDDC-4FCC-9DCF-CD62AADAFC86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nugr.contract.domainmodel", "nugr.contract.domainmodel\nugr.contract.domainmodel.csproj", "{5C5FA83C-5CE3-463B-9807-3612225925E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77AC35D8-F9BA-4453-A217-B87365C0B33B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77AC35D8-F9BA-4453-A217-B87365C0B33B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77AC35D8-F9BA-4453-A217-B87365C0B33B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77AC35D8-F9BA-4453-A217-B87365C0B33B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F527EB7-CD05-48FA-87E1-64CD29DE78C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F527EB7-CD05-48FA-87E1-64CD29DE78C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F527EB7-CD05-48FA-87E1-64CD29DE78C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F527EB7-CD05-48FA-87E1-64CD29DE78C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21BDEB49-CDDC-4FCC-9DCF-CD62AADAFC86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21BDEB49-CDDC-4FCC-9DCF-CD62AADAFC86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21BDEB49-CDDC-4FCC-9DCF-CD62AADAFC86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21BDEB49-CDDC-4FCC-9DCF-CD62AADAFC86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C5FA83C-5CE3-463B-9807-3612225925E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C5FA83C-5CE3-463B-9807-3612225925E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C5FA83C-5CE3-463B-9807-3612225925E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C5FA83C-5CE3-463B-9807-3612225925E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1 @@
+nugr.client.exe /dependencydiagram
